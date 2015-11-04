@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/imgMisterio1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/misterio1" />
+
+        <TextView
+            android:id="@+id/intro1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/intro1"
+            android:textStyle="bold"
+            android:layout_toRightOf="@id/imgMisterio1"
+            android:layout_alignTop="@id/imgMisterio1"
+            android:layout_alignBottom="@id/imgMisterio1"
+            android:gravity="center"
+            android:textIsSelectable="true"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/misterio1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgMisterio1"
+            android:text="@string/misterio1"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/botaoEternoPai"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/misterio1"
+            android:layout_centerHorizontal="true"
+            android:text="Eterno Pai" />
+
+        <Button
+            android:id="@+id/botaoDolorosaPaixao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/botaoEternoPai"
+            android:layout_centerHorizontal="true"
+            android:text="Pela Sua Dolorosa Paixão" />
+
+        <Button
+            android:id="@+id/botaoSangueeAgua"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/botaoDolorosaPaixao"
+            android:layout_centerHorizontal="true"
+            android:text="Ó Sangue e Água" />
+
+    </RelativeLayout>
+</ScrollView>

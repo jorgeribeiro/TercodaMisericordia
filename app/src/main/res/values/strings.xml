@@ -1,0 +1,201 @@
+<resources>
+    <string name="app_name">Divina Misericórdia</string>
+    <string name="title_activity_terco">Terço da Misericórdia</string>
+    <string name="action_settings">Settings</string>
+
+    <string name="menu">Menu</string>
+    <string name="drawer_open">Open</string>
+    <string name="drawer_close">Close</string>
+
+    <!-- Texts for the fragment_principal -->
+    <string name="texto_principal">Bem vindo ao aplicativo dedicado à Divina Misericórdia!\nDesenvolvido com o
+        intuito de divulgar ainda mais esta devoção, passada por Nosso Senhor Jesus Cristo à Santa Faustina
+        Kowalska, por meio de visões.\nNeste aplicativo você poderá aprender um pouco mais sobre a Divina
+        Misericórdia e tudo aquilo que está relacionado a ela, além de poder rezar o Terço da Misericórdia,
+        meditando os mistérios da Paixão de Nosso Senhor.\n\nUtilize o menu lateral para navegar pelo aplicativo.
+        \nDeus abençoe!</string>
+
+    <!-- Texts for the fragment_devocao -->
+    <string name="texto_devocao1">Jesus disse à Santa Faustina:\n<i>\"Sempre que quiseres proporcionar-me alegria,
+        fala ao mundo da Minha grande e insondável misericórdia.\"</i>\nEm 1933, Nosso Senhor Jesus Cristo apareceu
+        em visão para a Irmã Faustina Kowalska. Pelas palavras de Faustina, entendemos sua visão: <i>\"Vi
+        uma grande luz, e nela Deus Pai. Entre esta luz e a Terra vi Jesus pregado na Cruz de tal maneira que
+        Deus, querendo olhar para a Terra, tinha que olhar através das chagas de Jesus. E compreendi que,
+        somente por causa de Jesus, Deus está abençoando a Terra.\"</i>\nNosso Senhor Jesus Cristo contava à Irmã
+        Faustina que as pessoas acreditavam no amor de Deus, porém, tinham muito medo de seus pecados.
+        Faltava-lhes confiança de que Deus era misericordioso com seus filhos, e que perdoaria seus pecados
+        caso eles estivessem verdadeiramente arrependidos. Diante disso, Nosso Senhor Jesus Cristo apareceu em
+        visões diversas vezes para a Irmã Faustina fazendo-lhe pedidos, e Faustina registrava tudo em seu diário
+        espiritual. Nosso Senhor Jesus Cristo pediu ainda que se comemorasse a Festa da Divina Misericórdia, e que
+        essa Festa seria precedida pela Novena da Misericórdia, que seria iniciada na sexta-feira santa.</string>
+    <string name="texto_devocao2"><i>\"Em cada dia da novena, conduzirás ao Meu coração um grupo diferente de almas,
+        e as mergulharás no oceano da minha Misericórdia. Eu conduzirei todas as almas à casa do meu Pai&#8230; Por
+        minha parte, nada negarei a nenhuma daquelas almas que tu conduzirás à fonte da minha Misericórdia. Cada
+        dia pedirás a meu Pai, pela minha amarga Paixão, graças para essas almas.</i>\"\nEm 13 de Setembro de 1935,
+        Irmã Faustina escreve: <i>\"Eu vi um anjo, o executor da cólera de Deus&#8230; a ponto de atingir a terra&#8230;
+        Eu comecei a implorar  intensamente a Deus  pelo mundo, com palavras que ouvia interiormente. À medida em que
+        assim rezava, vi que o anjo ficava desamparado, e não mais podia executar a justa punição&#8230;</i>\"\nNo dia
+        seguinte, uma voz interior lhe ensinou uma oração feita nas contas do Rosário: o Terço da Misericórdia.
+        Nosso Senhor Jesus Cristo pediu que todos rezassem esse Terço como expiação dos pecados do mundo
+        inteiro.\nNosso Senhor Jesus Cristo pediu também que fosse pintada uma imagem de acordo com uma de suas
+        aparições. Jesus vestia um manto branco e posicionava Sua mão direita erguida abençoando. Sua mão
+        esquerda tocava o manto no local onde fica o Seu Coração, de onde saíam dois raios: um vermelho e um
+        branco. Nosso Senhor explicou à Faustina que o raio vermelho significa o seu Sangue, que foi derramado
+        por nós, e o raio branco representava a Água que purifica os nossos pecados.</string>
+    <string name="texto_devocao3">Karol Wojtyla era um profundo devoto da Divina Misericórdia. Como Cardeal da
+        Cracóvia, cidade da Polônia, Karol Wojtyla iniciou em 1965 o Processo Informativo da vida de Irmã
+        Faustina. Em 1967 a ação chegou em Roma, inaugurando o processo de Beatificação de Faustina. Em
+        dezembro de 1992, um milagre por intercessão da Irmã Faustina foi aceito, fazendo com que ela se torne
+        Beata no ano seguinte no dia 18 de Abril. Faustina se tornou Beata pelas mãos do Papa João Paulo II,
+        homem batizado com o nome de Karol Wojtyla. Vale lembrar que Faustina também era Polonesa, assim como o
+        Papa que a beatificou.\nJá em Janeiro de 2000 mais um milagre foi concedido e aceito pela intercessão da
+        Beata Faustina, fazendo com que ela se torne Santa Faustina no dia 30 de Abril de 2000, também pelas mãos
+        do Papa João Paulo II. Na canonização da beata, Papa João Paulo II também definiu que a Festa da
+        Misericórdia seria comemorada no segundo domingo da Páscoa. Tornando a história ainda mais bonita, o
+        Papa João Paulo II foi canonizado no dia 27 de Abril de 2014, um domingo da Divina Misericórdia.</string>
+    <string name="texto_devocao4"><i>\"Ajuda-me, Senhor, que minhas mãos possam ser misericordiosas e cheias
+        de boas ações. Eu só sei fazer o bem ao próximo, tomar sobre mim o trabalho mais pesado. Ajuda-me,
+        que o meu pé possa ser misericordioso, para que eu possa correr para ajudar o meu próximo, vencendo
+        a própria fadiga e cansaço. Meu verdadeiro descanso está a serviço dos outros. Ajuda-me, Senhor, que
+        meu coração seja misericordioso, para que eu possa sentir em mim todos os sofrimentos dos outros&#8230;
+        </i>\"</string>
+
+    <!-- Texts for the fragment_santa -->
+    <string name="texto_santa1">Maria Faustina Kowalska nasceu em Glogowiec, Polônia, no dia 25 de Agosto de
+        1905. Faustina era a terceira de dez filhos de uma família camponesa simples, porém enraizada nos
+        princípios cristãos. Desde a infância era notável suas virtudes piedosas, seu fervor na oração,
+        obediência e sensibilidade pela miséria humana. Faustina escreve em seu diário que desde os sete
+        anos sentia graça na vida religiosa. Foi nessa idade que ela sentiu o primeiro convite de Deus para
+        seguir este caminho. Aos 16 anos deixou a casa dos pais para trabalhar, e com o tempo decidiu
+        por entrar de vez na vida religiosa. Seus pais não concordavam com a ideia, adiando um pouco a sua
+        entrada no Convento. Em 1924 teve sua primeira visão, na qual Jesus Cristo apareceu a ela chagado e
+        disse: <i>\"Até quando te aguentarei? Até quando me serás infiel?</i>\"</string>
+    <string name="texto_santa2">Faustina foi então à Catedral de São Estanislau Kostka, e diante do Santíssimo
+        Sacramento rogou a Cristo para que obtivesse respostas. Então ela ouviu estas palavras: <i>\"Vai
+        imediatamente à Varsóvia e lá entrarás no convento</i>\". Faustina voltou para casa, arrumou suas coisas
+        indispensáveis e partiu para Varsóvia para seguir os planos de Jesus Cristo.\nJá em Varsóvia,
+        apresentou-se no dia primeiro de Agosto de 1925 à Congregação das Irmãs da Bem-aventurada Virgem
+        Maria da Misericórdia. Lá recebeu o nome de irmã Maria Faustina. Seu noviciado foi realizado na
+        Cracóvia e foi lá que Faustina professou seus primeiros votos religiosos e também os votos perpétuos
+        de castidade, pobreza e obediência. Irmã Faustina sempre trabalhou em diversos setores da Congregação,
+        cumprindo assíduamente suas funções e sempre zelando pela vida religiosa. Era recolhida e silenciosa
+        e ao mesmo tempo serena, cheia de amor puro e desinteressado para com os outros. Faustina praticava
+        severos jejuns antes de entrar na Congregação e por isso sua saúde era bastante frágil. Após o
+        primeiro ano de noviciado Faustina obteve suas primeiras experiências místicas, sempre acompanhadas
+        de sofrimentos espirituais e morais relacionados com o cumprimento da missão que Jesus Cristo designou
+        a ela.</string>
+    <string name="texto_santa3">Apesar de todo sofrimento e fraqueza, Irmã Faustina não se lamentava a Deus
+        ou enfraquecia na sua fé, e compreendia que poderia oferecer sua enfermidade a Deus como forma de
+        salvar mais almas, e assim ela fazia.\nAos 33 anos de idade, já bem debilitada pela tuberculose que
+        lhe acometia, porém misticamente ligada a Jesus Cristo, Irmã Faustina falece no dia 5 de Outubro de
+        1938, com sua santidade reconhecida entre suas companheiras de Convento.\n\n<i>\"Minha filha, não tenhas medo
+        dos sofrimentos, Eu estou contigo.</i>\"</string>
+
+    <!-- Texts for the fragment_mej -->
+    <string name="texto_mej1">O Movimento Eucarístico Jovem é uma ramificação do Apostolado da Oração e existe
+        no mundo inteiro. A partir dessa ramificação, o MEJ possui como sua espiritualidade principal
+        o Sagrado Coração de Jesus. Inspirado pelo amor que brota desse Sagrado Coração, os membros do MEJ
+        exercem serviços de apostolado, evangelização e oração pelo mundo inteiro, estando presente em mais
+        de 50 países.</string>
+    <string name="texto_mej2">O MEJ, antes conhecido como Cruzada Eucarística surgiu em 1915 no Colégio Tívoli
+        em Bordéus na França, tinha como missão fazer com que crianças e adolescentes se unissem parar orar
+        pelo mundo e todas as suas dificuldades. Nessa época o mundo era assolado pela primeira guerra mundial
+        e por isso era necessário a intercessão de todos para que se atingisse a paz. Nesse contexto, o MEJ
+        foi oficializado no mundo inteiro, inclusive no Brasil.</string>
+    <string name="texto_mej3">Então em 1960, a Cruzada Eucarística peregrinou a Roma e se encontrou com o Papa
+        João XXIII, que ao se referir ao grupo, o chamava de "Movimento" em vez de "Cruzada". A partir daí
+        começa-se a utilizar o nome Movimento Eucarístico Jovem.</string>
+    <string name="texto_mej4">O MEJ e o Sagrado Coração de Jesus foram a inspiração para o desenvolvimento
+        desse aplicativo. Conheça o Movimento e a devoção! \nPromessa no. 11: <i>Aqueles que propagarem esta
+        devoção terão seus nome escritos para sempre no Meu Sagrado Coração.</i></string>
+
+    <!-- Texts for the fragment_sobre -->
+    <string name="texto_sobre1">Desenvolvido por um servo apaixonado pela Divina Misericórdia de Deus.
+        \nDivulguem a seus conhecidos, de forma a propagar ainda mais esta devoção aos que não a conhecem, e
+        fazer com que a confiança na Misericórdia de Deus aumente no mundo inteiro.
+        \nTodo o material escrito nesse aplicativo foi baseado em diversas pesquisas sobre todos os assuntos
+        citados. \nCaso queira contactar o desenvolvedor, vá na página do aplicativo na Google Play e procure
+        pelo contato.</string>
+    <string name="texto_sobre2">Jesus, nós confiamos em Vós!</string>
+    <string name="texto_sammyra">Ao meu amor, que tanto me apoia, tanto me ajuda e tanto me faz feliz.
+    Te agradeço por todo o seu amor dedicado a mim, por compreender minhas limitações e defeitos. Por
+        ser um anjo na minha vida, um bem necessário, uma estrela brilhante e a princesa dos meus sonhos.
+        E principalmente por estar junto de mim e de Deus nessa caminhada. Com a benção divina, seremos
+        felizes segundo a vontade de Deus. Te amo querida.</string>
+
+    <!-- Texts for the fragment_begin -->
+    <string name="titulo">Terço da Divina Misericórdia</string>
+    <string name="oracaoInicio">Em nome do Pai e do Filho e do Espírito Santo &#8224;</string>
+    <string name="oracaoPaiNosso">Pai Nosso que estais no Céus, santificado seja o Vosso Nome, venha a nós o
+        vosso Reino, seja feita a vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai
+        hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido, e não nos deixeis
+        cair em tentação, mas livrai-nos do mal.</string>
+    <string name="oracaoAveMaria">Ave Maria, cheia de graça, o Senhor é convosco, bendita sois vós entre as
+        mulheres e bendito é o fruto do vosso ventre, Jesus. Santa Maria Mãe de Deus, rogai por nós pecadores,
+        agora e na hora de nossa morte.</string>
+    <string name="oracaoCredo">Creio em Deus Pai todo-poderoso, criador do céu e da terra; e em Jesus Cristo,
+        seu único Filho, Nosso Senhor; que foi concebido pelo poder do Espírito Santo; nasceu da Virgem Maria,
+        padeceu sob Pôncio Pilatos, foi crucificado, morto e sepultado; desceu à mansão dos mortos; ressuscitou
+        ao terceiro dia; subiu aos céus, está sentado à direita de Deus Pai todo-poderoso, donde há de vir e julgar
+        os vivos e os mortos; creio no Espírito Santo, na Santa Igreja Católica, na comunhão dos santos, na
+        remissão dos pecados, na ressurreição da carne, na vida eterna.</string>
+
+    <!-- Texts for the fragment_page -->
+    <string name="oracaoEternoPai">Eterno Pai, eu Vos ofereço o Corpo e o Sangue, a Alma e Divindade de Vosso
+        Diletíssimo Filho, Nosso Senhor Jesus Cristo, em expiação dos nossos pecados e os do mundo inteiro.</string>
+    <string name="oracaoDolorosaPaixao">Pela Sua dolorosa Paixão; tende misericórdia de nós e do mundo inteiro
+        (10 vezes).</string>
+    <string name="oracaoSangueeAgua">Ó Sangue e Água que jorrastes do Coração de Jesus como fonte de
+        misericórdia para nós, nós confiamos em Vós.</string>
+
+    <!-- Texts for the fragment_end -->
+    <string name="oracaoFinal">Deus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo
+        inteiro\nDeus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo inteiro\nDeus Santo,
+        Deus forte, Deus Imortal, tende piedade de nós e do mundo inteiro, Amém.</string>
+
+    <!-- Intro for the Mysteries -->
+    <string name="intro1">No primeiro mistério meditamos sobre a oração e agonia de Nosso Senhor
+        Jesus Cristo no Horto das Oliveiras</string>
+    <string name="intro2">No segundo mistério meditamos sobre a flagelação de Nosso Senhor Jesus
+        Cristo</string>
+    <string name="intro3">No terceiro mistério meditamos sobre a coroação de espinhos de Nosso
+        Senhor Jesus Cristo</string>
+    <string name="intro4">No quarto mistério meditamos sobre Jesus carregando a cruz para o Calvário
+        </string>
+    <string name="intro5">No quinto mistério meditamos sobre a morte de Jesus na cruz</string>
+
+    <!-- Texts for the Mysteries -->
+    <string name="misterio1">Nesse momento surgiu diante dos olhos da minha alma uma visão que era como a de
+        Nosso Senhor no Jardim das Oliveiras. Primeiramente os sofrimentos físicos e todas as circunstâncias
+        que os agravavam. Em seguida os sofrimentos espirituais em toda sua extensão e ainda aqueles dos quais
+        ninguém saberá. Essa visão englobava tudo: julgamentos injustos, difamações. Quando terminou a visão,
+        um suor frio me cobria a testa. Fazei de mim Jesus, um sacrifício agradável e puro ao olhar de Vosso
+        Pai.</string>
+    <string name="misterio2">Quando cheguei para a Adoração, logo me envolveu o recolhimento interior e vi
+        Nosso Senhor amarrado ao tronco e logo sobreveio a flagelação. Vi quatro homens que se revezavam a
+        açoitar o Senhor com azorragues. E, quando o flagelavam os carrascos, Jesus se calava e olhava para o
+        longe. Então calaram-se também os meus lábios e comecei a sentir em mim a agonia. Então o Senhor me
+        disse: <i>\"Estou vendo a dor sincera do teu coração, que trouxe enorme alívio ao Meu Coração. Olha e
+        consola-te\"</i>.
+        </string>
+    <string name="misterio3">Quando me concentro na Paixão do Senhor, frequentemente vejo Nosso Senhor na
+        adoração da seguinte maneira: após a flagelação, cobriram o Senhor com um manto de púrpura, sujo e
+        rasgado, jogando-o sobre as chagas renovadas. Fizeram uma coroa de espinhos e a colocaram na Sua Santa
+        cabeça, pondo-Lhe ainda um caniço em Suas mãos e zombando dEle cuspiram no Seu rosto, enquanto outros
+        pegavam o caniço e batiam na cabeça, outros infligiam-Lhe dores esbofeteando-O, ou cobrindo-Lhe o
+        rosto, davam-Lhe murros. Jesus suportava tudo em silêncio. Que toda alma reflita sobre o que Jesus
+        sofreu neste momento.</string>
+    <string name="misterio4">Jesus surgiu, de repente, diante de mim, despido de suas vestes, coberto de chagas
+        por todo o corpo, os olhos cheios de sangue e lágrimas, o rosto todo desfigurado, coberto de escarros. Ó
+        Cristo, Vós sabeis como desejo ardentemente assemelhar-me a Vós. Fazei que participe de toda a Vossa
+        Paixão, que toda a Vossa dor se entorne no meu coração. Confio que completareis isso em mim, da maneira que
+        julgardes apropriada.</string>
+    <string name="misterio5">À noite vi Nosso Senhor crucificado. Das mãos, dos pés e do lado corria o
+        Preciosíssimo Sangue. A seguir Jesus me disse: <i>\"Tudo isto é pela salvação das almas. Reflete, minha
+        filha, sobre o que tu estás fazendo pela salvação delas.\"</i> Respondi: <i>\"Jesus, quando olho para a Vossa
+        Paixão, vejo que eu quase nada faço pela salvação das almas\"</i>. E o Senhor me disse: <i>\"Fica sabendo,
+        minha filha, que teu silencioso martírio de todos os dias, na total submissão à Minha vontade, leva
+        muitas almas ao céu. Quando te parecer que o sofrimento ultrapassa as tuas forças, olha para as Minhas
+        Chagas, e te elevarás acima do desprezo e do juízo dos homens. A meditação sobre a Minha Paixão te
+        ajudará a te elevares acima de tudo\"</i>. Compreendi muitas coisas que antes não era capaz de entender.</string>
+</resources>

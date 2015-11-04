@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="10dp">
+
+        <TextView
+            android:id="@+id/txt1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:text="@string/texto_devocao1"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgAparicao"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt1"
+            android:src="@drawable/aparicao"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txt2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgAparicao"
+            android:text="@string/texto_devocao2"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgPintura"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt2"
+            android:src="@drawable/pintura"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txt3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPintura"
+            android:text="@string/texto_devocao3"
+            android:textSize="15sp" />
+
+        <ImageView
+            android:id="@+id/imgPapa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txt3"
+            android:src="@drawable/papa"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:id="@+id/txt4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgPapa"
+            android:text="@string/texto_devocao4"
+            android:textSize="15sp" />
+
+    </RelativeLayout>
+</ScrollView>

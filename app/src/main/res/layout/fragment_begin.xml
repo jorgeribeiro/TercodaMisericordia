@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <ImageView
+            android:id="@+id/imgDivinaMisericordia"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/divinamisericordia" />
+
+        <TextView
+            android:id="@+id/titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/imgDivinaMisericordia"
+            android:gravity="center"
+            android:text="@string/titulo"
+            android:textStyle="bold"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/oracaoInicio"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titulo"
+            android:gravity="center"
+            android:text="@string/oracaoInicio"
+            android:textIsSelectable="true"
+            android:textSize="14sp" />
+
+        <Button
+            android:id="@+id/botaoPaiNosso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/oracaoInicio"
+            android:layout_centerHorizontal="true"
+            android:text="Pai Nosso" />
+
+        <Button
+            android:id="@+id/botaoAveMaria"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/botaoPaiNosso"
+            android:layout_centerHorizontal="true"
+            android:text="Ave Maria" />
+
+        <Button
+            android:id="@+id/botaoCredo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/botaoAveMaria"
+            android:layout_centerHorizontal="true"
+            android:text="Credo" />
+
+    </RelativeLayout>
+</ScrollView>
