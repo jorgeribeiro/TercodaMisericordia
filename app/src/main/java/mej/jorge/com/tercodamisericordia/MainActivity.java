@@ -22,8 +22,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     private static final String FIRST_TIME = "first_time";
     Toolbar toolbar;
     NavigationView mDrawer;
+
     private DrawerLayout mDrawerLayout;
+
     private ActionBarDrawerToggle mDrawerToggle;
+    
     private int mSelectedId;
     private boolean mUserSawDrawer = false;
 
