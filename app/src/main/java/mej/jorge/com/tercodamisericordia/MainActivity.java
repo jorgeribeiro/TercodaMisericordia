@@ -8,6 +8,7 @@ import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
+import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
@@ -16,28 +17,75 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 
-public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
+public class MainActivity extends AppCompatActivity {
 
     private static final String SELECTED_ITEM_ID = "selected_item_id";
     private static final String FIRST_TIME = "first_time";
     Toolbar toolbar;
     NavigationView mDrawer;
-
     private DrawerLayout mDrawerLayout;
-
     private ActionBarDrawerToggle mDrawerToggle;
-    
     private int mSelectedId;
     private boolean mUserSawDrawer = false;
+
+    FragmentManager mFragmentManager;
+    FragmentTransaction mFragmentTransaction;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
+        mDrawer = (NavigationView) findViewById(R.id.nvView);
+
+        mFragmentManager = getSupportFragmentManager();
+        mFragmentTransaction = mFragmentManager.beginTransaction();
+        mFragmentTransaction.replace(R.id.flContent, new PrincipalFragment()).commit();
+
+        mDrawer.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
+            @Override
+            public boolean onNavigationItemSelected(MenuItem menuItem) {
+                mDrawerLayout.closeDrawers();
+
+                if (menuItem.getItemId() == R.id.navigation_item_1) {
+                    FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
+                    fragmentTransaction.replace(R.id.flContent, new PrincipalFragment()).commit();
+
+                }
+
+                if (menuItem.getItemId() == R.id.navigation_item_2) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.flContent, new DevocaoFragment()).commit();
+                }
+
+                if (menuItem.getItemId() == R.id.navigation_item_4) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.flContent, new TercoFragment2()).commit();
+                }
+
+                return false;
+            }
+
+        });
+
+        toolbar = (Toolbar) findViewById(R.id.app_bar);
+        mDrawerToggle = new ActionBarDrawerToggle(
+                this,
+                mDrawerLayout,
+                toolbar,
+                R.string.drawer_open,
+                R.string.drawer_close);
+        mDrawerLayout.setDrawerListener(mDrawerToggle);
+        mDrawerToggle.syncState();
+
+
+
+
+        /**
         // Set a Toolbar to replace the ActionBar.
         toolbar = (Toolbar) findViewById(R.id.app_bar);
-        setSupportActionBar(toolbar);
+        //setSupportActionBar(toolbar);
 
         // Find our Navigation View
         mDrawer = (NavigationView) findViewById(R.id.nvView);
@@ -63,8 +111,11 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         mSelectedId = savedInstanceState == null ? R.id.navigation_item_1 : savedInstanceState.getInt(SELECTED_ITEM_ID);
         navigate(mSelectedId);
+         */
 
     }
+
+    /**
 
     private boolean didUserSeeDrawer() {
         SharedPreferences sharedPreferences = PreferenceManager.getDefaultSharedPreferences(this);
@@ -87,6 +138,8 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
     }
 
     private void navigate(int mSelectedId) {
+
+
         Fragment fragment = null;
         Class fragmentClass;
         Intent intent;
@@ -128,8 +181,21 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
         if (mSelectedId == R.id.navigation_item_4) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
+            fragmentClass = TercoFragment2.class;
+            try {
+                fragment = (Fragment) fragmentClass.newInstance();
+            } catch (Exception e) {
+                e.printStackTrace();
+            }
+            FragmentManager fragmentManager = getSupportFragmentManager();
+            fragmentManager.beginTransaction().replace(R.id.flContent, new TercoFragment2()).commit();
+            setTitle("Terço da Misericórdia");
+            // trying to fix
+            /*
+            mDrawerLayout.closeDrawer(GravityCompat.START);
             intent = new Intent(this, TercoActivity.class);
             startActivity(intent);
+
         }
         if(mSelectedId == R.id.navigation_item_5) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
@@ -193,4 +259,5 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
         }
     }
 
+        */
 }
