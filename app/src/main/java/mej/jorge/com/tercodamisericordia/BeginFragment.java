@@ -18,6 +18,23 @@ public class BeginFragment extends Fragment {
         View view;
 
         view = inflater.inflate(R.layout.fragment_begin, container, false);
+
+        View buttonEspiritoSanto = view.findViewById(R.id.botaoEspiritoSanto);
+        buttonEspiritoSanto.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
+                        .setTitle("Invocação do Espírito Santo")
+                        .setMessage(R.string.oracaoEspiritoSanto)
+                        .setPositiveButton("Amém", new DialogInterface.OnClickListener() {
+                            public void onClick(DialogInterface dialog, int which) {
+                                // Do something else
+                            }
+                        });
+                AlertDialog alert = builder.create();
+                alert.show();
+            }
+        });
         View buttonPaiNosso = view.findViewById(R.id.botaoPaiNosso);
         buttonPaiNosso.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -1,11 +1,11 @@
-package mej.jorge.com.tercodamisericordia.adapters;
+package mej.jorge.com.tercodamisericordia.notUsed;
 
 import android.content.Context;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import mej.jorge.com.tercodamisericordia.TercoFragment;
+import mej.jorge.com.tercodamisericordia.notUsed.TercoFragment;
 
 public class TercoFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 7;

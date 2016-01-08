@@ -38,10 +38,18 @@
             android:textSize="14sp" />
 
         <Button
-            android:id="@+id/botaoPaiNosso"
+            android:id="@+id/botaoEspiritoSanto"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/oracaoInicio"
+            android:layout_centerHorizontal="true"
+            android:text="Invocação do Espírito Santo" />
+
+        <Button
+            android:id="@+id/botaoPaiNosso"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/botaoEspiritoSanto"
             android:layout_centerHorizontal="true"
             android:text="Pai Nosso" />
 

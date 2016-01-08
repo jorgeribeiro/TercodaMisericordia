@@ -1,32 +1,39 @@
 <?xml version="1.0" encoding="utf-8"?>
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
-    <group
-        android:checkableBehavior="single">
-        <item
-            android:id="@+id/navigation_item_1"
-            android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
-            android:title="Principal"
-            android:checked="true" />
-        <item
-            android:id="@+id/navigation_item_2"
-            android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
-            android:title="A Devoção" />
-        <item
-            android:id="@+id/navigation_item_3"
-            android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
-            android:title="Santa Faustina" />
+    <item
+        android:id="@+id/navigation_item_1"
+        android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
+        android:title="@string/principal"
+        android:checked="true" />
+    <item
+        android:id="@+id/navigation_item_2"
+        android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
+        android:title="@string/a_devocao" />
+    <item
+        android:id="@+id/navigation_item_3"
+        android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
+        android:title="@string/santa_faustina" />
+
+    <group android:id="@+id/terco">
         <item
             android:id="@+id/navigation_item_4"
             android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
-            android:title="Terço da Misericórdia"
-            android:checkable="false" />
+            android:title="@string/terco_da_misericordia" />
         <item
             android:id="@+id/navigation_item_5"
             android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
-            android:title="MEJ" />
+            android:title="@string/alerta_do_terco" />
+    </group>
+
+    <group android:id="@+id/others">
         <item
             android:id="@+id/navigation_item_6"
             android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
-            android:title="Sobre" />
+            android:title="@string/mej" />
+        <item
+            android:id="@+id/navigation_item_7"
+            android:icon="@drawable/ic_radio_button_unchecked_black_24dp"
+            android:title="@string/sobre" />
     </group>
+
 </menu>

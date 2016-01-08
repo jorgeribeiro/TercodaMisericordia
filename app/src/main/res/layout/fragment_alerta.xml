@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp">
+
+        <TextView
+            android:id="@+id/textoAlerta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text="@string/texto_alerta"
+            android:textSize="14sp"/>
+
+        <TimePicker
+            android:id="@+id/timePicker"
+            android:timePickerMode="spinner"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/textoAlerta"
+            android:layout_centerHorizontal="true" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/timePicker"
+            android:layout_centerHorizontal="true"
+            android:textOn="Alerta Ligado"
+            android:textOff="Alerta Deslig."/>
+
+    </RelativeLayout>
+</ScrollView>

@@ -1,4 +1,4 @@
-package mej.jorge.com.tercodamisericordia;
+package mej.jorge.com.tercodamisericordia.notUsed;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,6 +10,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import mej.jorge.com.tercodamisericordia.R;
 
 public class TercoFragment extends Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";

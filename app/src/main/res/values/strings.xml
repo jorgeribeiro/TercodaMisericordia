@@ -7,6 +7,14 @@
     <string name="drawer_open">Open</string>
     <string name="drawer_close">Close</string>
 
+    <string name="principal">Principal</string>
+    <string name="a_devocao">A Devoção</string>
+    <string name="santa_faustina">Santa Faustina</string>
+    <string name="terco_da_misericordia">Terço da Misericórdia</string>
+    <string name="alerta_do_terco">Alerta do terço</string>
+    <string name="mej">MEJ</string>
+    <string name="sobre">Sobre</string>
+
     <!-- Texts for the fragment_principal -->
     <string name="texto_principal">Bem vindo ao aplicativo dedicado à Divina Misericórdia!\nDesenvolvido com o
         intuito de divulgar ainda mais esta devoção, passada por Nosso Senhor Jesus Cristo à Santa Faustina
@@ -31,10 +39,10 @@
     <string name="texto_devocao2"><i>\"Em cada dia da novena, conduzirás ao Meu coração um grupo diferente de almas,
         e as mergulharás no oceano da minha Misericórdia. Eu conduzirei todas as almas à casa do meu Pai&#8230; Por
         minha parte, nada negarei a nenhuma daquelas almas que tu conduzirás à fonte da minha Misericórdia. Cada
-        dia pedirás a meu Pai, pela minha amarga Paixão, graças para essas almas.</i>\"\nEm 13 de Setembro de 1935,
+        dia pedirás a meu Pai, pela minha amarga Paixão, graças para essas almas.\"</i>\nEm 13 de Setembro de 1935,
         Irmã Faustina escreve: <i>\"Eu vi um anjo, o executor da cólera de Deus&#8230; a ponto de atingir a terra&#8230;
         Eu comecei a implorar  intensamente a Deus  pelo mundo, com palavras que ouvia interiormente. À medida em que
-        assim rezava, vi que o anjo ficava desamparado, e não mais podia executar a justa punição&#8230;</i>\"\nNo dia
+        assim rezava, vi que o anjo ficava desamparado, e não mais podia executar a justa punição&#8230;\"</i>\nNo dia
         seguinte, uma voz interior lhe ensinou uma oração feita nas contas do Rosário: o Terço da Misericórdia.
         Nosso Senhor Jesus Cristo pediu que todos rezassem esse Terço como expiação dos pecados do mundo
         inteiro.\nNosso Senhor Jesus Cristo pediu também que fosse pintada uma imagem de acordo com uma de suas
@@ -57,8 +65,7 @@
         de boas ações. Eu só sei fazer o bem ao próximo, tomar sobre mim o trabalho mais pesado. Ajuda-me,
         que o meu pé possa ser misericordioso, para que eu possa correr para ajudar o meu próximo, vencendo
         a própria fadiga e cansaço. Meu verdadeiro descanso está a serviço dos outros. Ajuda-me, Senhor, que
-        meu coração seja misericordioso, para que eu possa sentir em mim todos os sofrimentos dos outros&#8230;
-        </i>\"</string>
+        meu coração seja misericordioso, para que eu possa sentir em mim todos os sofrimentos dos outros&#8230;\"</i></string>
 
     <!-- Texts for the fragment_santa -->
     <string name="texto_santa1">Maria Faustina Kowalska nasceu em Glogowiec, Polônia, no dia 25 de Agosto de
@@ -69,10 +76,10 @@
         seguir este caminho. Aos 16 anos deixou a casa dos pais para trabalhar, e com o tempo decidiu
         por entrar de vez na vida religiosa. Seus pais não concordavam com a ideia, adiando um pouco a sua
         entrada no Convento. Em 1924 teve sua primeira visão, na qual Jesus Cristo apareceu a ela chagado e
-        disse: <i>\"Até quando te aguentarei? Até quando me serás infiel?</i>\"</string>
+        disse: <i>\"Até quando te aguentarei? Até quando me serás infiel?\"</i></string>
     <string name="texto_santa2">Faustina foi então à Catedral de São Estanislau Kostka, e diante do Santíssimo
         Sacramento rogou a Cristo para que obtivesse respostas. Então ela ouviu estas palavras: <i>\"Vai
-        imediatamente à Varsóvia e lá entrarás no convento</i>\". Faustina voltou para casa, arrumou suas coisas
+        imediatamente à Varsóvia e lá entrarás no convento\"</i>. Faustina voltou para casa, arrumou suas coisas
         indispensáveis e partiu para Varsóvia para seguir os planos de Jesus Cristo.\nJá em Varsóvia,
         apresentou-se no dia primeiro de Agosto de 1925 à Congregação das Irmãs da Bem-aventurada Virgem
         Maria da Misericórdia. Lá recebeu o nome de irmã Maria Faustina. Seu noviciado foi realizado na
@@ -89,7 +96,14 @@
         salvar mais almas, e assim ela fazia.\nAos 33 anos de idade, já bem debilitada pela tuberculose que
         lhe acometia, porém misticamente ligada a Jesus Cristo, Irmã Faustina falece no dia 5 de Outubro de
         1938, com sua santidade reconhecida entre suas companheiras de Convento.\n\n<i>\"Minha filha, não tenhas medo
-        dos sofrimentos, Eu estou contigo.</i>\"</string>
+        dos sofrimentos, Eu estou contigo.\"</i></string>
+
+    <!-- Texts for the fragment_alerta -->
+    <string name="texto_alerta"><i>\"Às três horas da tarde implora À Minha Misericórdia, especialmente pelos pecadores,
+        e, ao menos por um breve tempo, reflete sobre a Minha Paixão, especialmente sobre o abandono em que Me encontrei
+        no momento da agonia. Esta é a Hora de grande Misericórdia para o mundo inteiro.\"</i>\n\nA Hora da Misericórdia,
+        como disse Jesus, é às três horas da tarde. Porém você pode escolher um horário no qual deseja receber um alerta
+        para lembrá-lo da oração do Terço.</string>
 
     <!-- Texts for the fragment_mej -->
     <string name="texto_mej1">O Movimento Eucarístico Jovem é uma ramificação do Apostolado da Oração e existe
@@ -126,6 +140,11 @@
     <!-- Texts for the fragment_begin -->
     <string name="titulo">Terço da Divina Misericórdia</string>
     <string name="oracaoInicio">Em nome do Pai e do Filho e do Espírito Santo &#8224;</string>
+    <string name="oracaoEspiritoSanto">Vinde Espírito Santo, enchei os corações dos vossos fiéis, e
+        acendei neles o fogo do vosso amor. Enviai o vosso Espírito e tudo será criado e renovareis a
+        face da terra. <b>Oremos:</b> Ó Deus que instruíste os corações dos vossos fiéis, com a luz do Espírito
+        Santo, fazei que apreciemos retamente todas as coisas segundo o mesmo Espírito e gozemos sempre
+        de sua consolação. Por Cristo Senhor Nosso.</string>
     <string name="oracaoPaiNosso">Pai Nosso que estais no Céus, santificado seja o Vosso Nome, venha a nós o
         vosso Reino, seja feita a vossa vontade assim na terra como no Céu. O pão nosso de cada dia nos dai
         hoje, perdoai-nos as nossas ofensas assim como nós perdoamos a quem nos tem ofendido, e não nos deixeis

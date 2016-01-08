@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="mej.jorge.com.tercodamisericordia" >
 
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/icon_app"
@@ -16,9 +18,9 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity
-            android:name=".TercoActivity"
-            android:label="@string/title_activity_terco" />
+
+        <receiver android:process=":remote" android:name=".adapters.AlarmReceiver"></receiver>
+
     </application>
 
 </manifest>

@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import mej.jorge.com.tercodamisericordia.adapters.TercoFragmentPagerAdapter;
+import mej.jorge.com.tercodamisericordia.notUsed.TercoFragmentPagerAdapter;
 
 public class TercoActivity extends AppCompatActivity {
 
@@ -15,7 +15,7 @@ public class TercoActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_terco);
+        setContentView(R.layout.fragment_terco);
 
         // Set a Toolbar to replace the ActionBar
         toolbar = (Toolbar) findViewById(R.id.app_bar);

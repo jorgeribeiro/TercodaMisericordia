@@ -1,12 +1,7 @@
 package mej.jorge.com.tercodamisericordia;
 
-import android.content.Intent;
-import android.content.SharedPreferences;
-import android.content.res.Configuration;
 import android.os.Bundle;
-import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
-import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.view.GravityCompat;
@@ -14,19 +9,14 @@ import android.support.v4.widget.DrawerLayout;
 import android.support.v7.app.ActionBarDrawerToggle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.view.Menu;
 import android.view.MenuItem;
 
 public class MainActivity extends AppCompatActivity {
 
-    private static final String SELECTED_ITEM_ID = "selected_item_id";
-    private static final String FIRST_TIME = "first_time";
     Toolbar toolbar;
     NavigationView mDrawer;
     private DrawerLayout mDrawerLayout;
     private ActionBarDrawerToggle mDrawerToggle;
-    private int mSelectedId;
-    private boolean mUserSawDrawer = false;
 
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
@@ -35,6 +25,9 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        toolbar = (Toolbar) findViewById(R.id.app_bar);
+        setSupportActionBar(toolbar);
 
         mDrawerLayout = (DrawerLayout) findViewById(R.id.drawer_layout);
         mDrawer = (NavigationView) findViewById(R.id.nvView);
@@ -51,17 +44,31 @@ public class MainActivity extends AppCompatActivity {
                 if (menuItem.getItemId() == R.id.navigation_item_1) {
                     FragmentTransaction fragmentTransaction = mFragmentManager.beginTransaction();
                     fragmentTransaction.replace(R.id.flContent, new PrincipalFragment()).commit();
-
-                }
-
-                if (menuItem.getItemId() == R.id.navigation_item_2) {
+                    toolbar.setTitle(R.string.app_name);
+                } else if (menuItem.getItemId() == R.id.navigation_item_2) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
                     xfragmentTransaction.replace(R.id.flContent, new DevocaoFragment()).commit();
-                }
-
-                if (menuItem.getItemId() == R.id.navigation_item_4) {
+                    toolbar.setTitle(R.string.a_devocao);
+                } else if (menuItem.getItemId() == R.id.navigation_item_3) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.flContent, new SantaFragment()).commit();
+                    toolbar.setTitle(R.string.santa_faustina);
+                } else if (menuItem.getItemId() == R.id.navigation_item_4) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
                     xfragmentTransaction.replace(R.id.flContent, new TercoFragment2()).commit();
+                    toolbar.setTitle(R.string.terco_da_misericordia);
+                } else if (menuItem.getItemId() == R.id.navigation_item_5) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.flContent, new AlertaFragment()).commit();
+                    toolbar.setTitle(R.string.alerta_do_terco);
+                } else if (menuItem.getItemId() == R.id.navigation_item_6) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.flContent, new MEJFragment()).commit();
+                    toolbar.setTitle(R.string.mej);
+                } else if (menuItem.getItemId() == R.id.navigation_item_7) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.flContent, new SobreFragment()).commit();
+                    toolbar.setTitle(R.string.sobre);
                 }
 
                 return false;
@@ -69,7 +76,6 @@ public class MainActivity extends AppCompatActivity {
 
         });
 
-        toolbar = (Toolbar) findViewById(R.id.app_bar);
         mDrawerToggle = new ActionBarDrawerToggle(
                 this,
                 mDrawerLayout,
@@ -78,7 +84,6 @@ public class MainActivity extends AppCompatActivity {
                 R.string.drawer_close);
         mDrawerLayout.setDrawerListener(mDrawerToggle);
         mDrawerToggle.syncState();
-
 
 
 
@@ -113,6 +118,15 @@ public class MainActivity extends AppCompatActivity {
         navigate(mSelectedId);
          */
 
+    }
+
+    @Override
+    public void onBackPressed() {
+        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
+            mDrawerLayout.closeDrawer(GravityCompat.START);
+        } else {
+            super.onBackPressed();
+        }
     }
 
     /**
@@ -248,15 +262,6 @@ public class MainActivity extends AppCompatActivity {
     protected void onSaveInstanceState(Bundle outState) {
         super.onSaveInstanceState(outState);
         outState.putInt(SELECTED_ITEM_ID, mSelectedId);
-    }
-
-    @Override
-    public void onBackPressed() {
-        if (mDrawerLayout.isDrawerOpen(GravityCompat.START)) {
-            mDrawerLayout.closeDrawer(GravityCompat.START);
-        } else {
-            super.onBackPressed();
-        }
     }
 
         */
