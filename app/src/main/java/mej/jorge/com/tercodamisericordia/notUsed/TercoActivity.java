@@ -1,4 +1,4 @@
-package mej.jorge.com.tercodamisericordia;
+package mej.jorge.com.tercodamisericordia.notUsed;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -6,7 +6,7 @@ import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
 
-import mej.jorge.com.tercodamisericordia.notUsed.TercoFragmentPagerAdapter;
+import mej.jorge.com.tercodamisericordia.R;
 
 public class TercoActivity extends AppCompatActivity {
 

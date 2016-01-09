@@ -47,7 +47,6 @@ public class AlertaFragment extends Fragment {
                     editor.putInt("minTimePicker", ((TimePicker) timePicker).getCurrentMinute());
 
                     Calendar calendar = Calendar.getInstance();
-                    calendar.setTimeInMillis(System.currentTimeMillis());
                     calendar.set(Calendar.HOUR_OF_DAY, ((TimePicker) timePicker).getCurrentHour());
                     calendar.set(Calendar.MINUTE, ((TimePicker) timePicker).getCurrentMinute());
                     calendar.clear(Calendar.SECOND);
