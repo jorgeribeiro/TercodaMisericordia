@@ -7,7 +7,6 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import mej.jorge.com.tercodamisericordia.adapters.OnSwipeTouchListener;
 
 public class SobreFragment extends Fragment {
     public SobreFragment(){}
@@ -18,20 +17,25 @@ public class SobreFragment extends Fragment {
 
         View view = inflater.inflate(R.layout.fragment_sobre, container, false);
 
-        view.setOnTouchListener(new OnSwipeTouchListener(getActivity()) {
+        View sammyraBtn = view.findViewById(R.id.sammyra);
+        sammyraBtn.setOnClickListener(new View.OnClickListener() {
+            int countClick = 0;
             @Override
-            public void onSwipeLeft() {
-                //Toast.makeText(getActivity(), R.string.texto_sammyra, Toast.LENGTH_LONG).show();
-                AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
-                        .setTitle("Sammyra")
-                        .setMessage(R.string.texto_sammyra)
-                        .setPositiveButton("♥", new DialogInterface.OnClickListener() {
-                            public void onClick(DialogInterface dialog, int which) {
-                                // Do something else
-                            }
-                        });
-                AlertDialog alert = builder.create();
-                alert.show();
+            public void onClick(View v) {
+                countClick++;
+                if(countClick == 18) {
+                    countClick = 0;
+                    AlertDialog.Builder builder = new AlertDialog.Builder(getActivity())
+                            .setTitle("Sammyra")
+                            .setMessage(R.string.texto_sammyra)
+                            .setPositiveButton("♥", new DialogInterface.OnClickListener() {
+                                public void onClick(DialogInterface dialog, int which) {
+                                    // Do something else
+                                }
+                            });
+                    AlertDialog alert = builder.create();
+                    alert.show();
+                }
             }
         });
 

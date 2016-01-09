@@ -1,8 +1,5 @@
 package mej.jorge.com.tercodamisericordia;
 
-import android.app.AlarmManager;
-import android.app.PendingIntent;
-import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -23,16 +20,18 @@ public class AlertaFragment extends Fragment {
     public AlertaFragment(){}
 
     private static Toast toast;
+    private AlarmReceiver alarmReceiver;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_alerta, container, false);
+        alarmReceiver = new AlarmReceiver();
 
         final SharedPreferences mSettings = PreferenceManager.getDefaultSharedPreferences(getActivity());
-
         final View timePicker = view.findViewById(R.id.timePicker);
-        View toggleButton = view.findViewById(R.id.toggleButton);
+        final View toggleButton = view.findViewById(R.id.toggleButton);
+
         ((ToggleButton) toggleButton).setChecked(mSettings.getBoolean("statusToggleButton", false));
         ((TimePicker) timePicker).setIs24HourView(true);
         ((TimePicker) timePicker).setCurrentHour(mSettings.getInt("hourTimePicker", 15));
@@ -41,8 +40,6 @@ public class AlertaFragment extends Fragment {
         ((ToggleButton) toggleButton).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
-                Intent alarmIntent = new Intent(getActivity(), AlarmReceiver.class);
-                PendingIntent pendingIntent = PendingIntent.getBroadcast(getActivity(), 0, alarmIntent, PendingIntent.FLAG_UPDATE_CURRENT);
                 SharedPreferences.Editor editor = mSettings.edit();
                 if(isChecked) {
                     editor.putBoolean("statusToggleButton", true);
@@ -50,11 +47,11 @@ public class AlertaFragment extends Fragment {
                     editor.putInt("minTimePicker", ((TimePicker) timePicker).getCurrentMinute());
 
                     Calendar calendar = Calendar.getInstance();
+                    calendar.setTimeInMillis(System.currentTimeMillis());
                     calendar.set(Calendar.HOUR_OF_DAY, ((TimePicker) timePicker).getCurrentHour());
                     calendar.set(Calendar.MINUTE, ((TimePicker) timePicker).getCurrentMinute());
-                    calendar.set(Calendar.SECOND, 0);
-                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(getActivity().ALARM_SERVICE);
-                    alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 24*60*60*1000, pendingIntent);
+                    calendar.clear(Calendar.SECOND);
+                    alarmReceiver.setAlarm(getActivity(), calendar);
 
                     if(toast != null)
                         toast.cancel();
@@ -63,8 +60,7 @@ public class AlertaFragment extends Fragment {
                 } else {
                     editor.putBoolean("statusToggleButton", false);
 
-                    AlarmManager alarmManager = (AlarmManager) getActivity().getSystemService(getActivity().ALARM_SERVICE);
-                    alarmManager.cancel(pendingIntent);
+                    alarmReceiver.cancelAlarm(getActivity());
 
                     if(toast != null)
                         toast.cancel();

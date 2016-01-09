@@ -1,4 +1,4 @@
-package mej.jorge.com.tercodamisericordia.adapters;
+package mej.jorge.com.tercodamisericordia.notUsed;
 
 import android.content.Context;
 import android.view.GestureDetector;

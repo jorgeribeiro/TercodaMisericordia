@@ -35,5 +35,15 @@
             android:textOn="Alerta Ligado"
             android:textOff="Alerta Deslig."/>
 
+        <ImageView
+            android:id="@+id/clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignTop="@id/toggleButton"
+            android:layout_alignBottom="@id/toggleButton"
+            android:layout_toLeftOf="@id/toggleButton"
+            android:layout_toStartOf="@id/toggleButton"
+            android:src="@drawable/ic_alarm_black_24dp" />
+
     </RelativeLayout>
 </ScrollView>

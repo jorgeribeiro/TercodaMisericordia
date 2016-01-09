@@ -1,6 +1,11 @@
 package mej.jorge.com.tercodamisericordia;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
+import android.content.SharedPreferences;
 import android.os.Bundle;
+import android.preference.PreferenceManager;
 import android.support.design.widget.NavigationView;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
@@ -25,6 +30,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        newFeatures(this);
 
         toolbar = (Toolbar) findViewById(R.id.app_bar);
         setSupportActionBar(toolbar);
@@ -90,7 +97,7 @@ public class MainActivity extends AppCompatActivity {
         /**
         // Set a Toolbar to replace the ActionBar.
         toolbar = (Toolbar) findViewById(R.id.app_bar);
-        //setSupportActionBar(toolbar);
+        setSupportActionBar(toolbar);
 
         // Find our Navigation View
         mDrawer = (NavigationView) findViewById(R.id.nvView);
@@ -127,6 +134,32 @@ public class MainActivity extends AppCompatActivity {
         } else {
             super.onBackPressed();
         }
+    }
+
+    public void newFeatures(Context context) {
+        SharedPreferences mSettings = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean dialogShown = mSettings.getBoolean("dialogShown", false);
+        if (!dialogShown) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(context)
+                    .setTitle("Novidades da nova versão!")
+                    .setMessage("- Alerta do terço \n" +
+                            "- Nova interface gráfica\n" +
+                            "- Acesso ao terço facilitado\n" +
+                            "- Invocação do Espírito Santo incluída no terço\n" +
+                            "- Novos ícones")
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // Do something else
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+
+            SharedPreferences.Editor editor = mSettings.edit();
+            editor.putBoolean("dialogShown", true);
+            editor.apply();
+        }
+
     }
 
     /**
