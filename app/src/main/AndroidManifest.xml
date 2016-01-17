@@ -19,7 +19,7 @@
             </intent-filter>
         </activity>
 
-        <receiver android:process=":remote" android:name=".adapters.AlarmReceiver"></receiver>
+        <receiver android:process=":remote" android:name=".adapters.AlarmReceiver"/>
 
     </application>
 

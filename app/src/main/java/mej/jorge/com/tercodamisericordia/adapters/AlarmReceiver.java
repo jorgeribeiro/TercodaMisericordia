@@ -7,6 +7,7 @@ import android.content.BroadcastReceiver;
 import android.content.Context;
 import android.content.Intent;
 import android.graphics.BitmapFactory;
+import android.os.Build;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentTransaction;
 import android.support.v4.app.NotificationCompat;
@@ -25,17 +26,15 @@ public class AlarmReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 
         Intent intent1 = new Intent(context, MainActivity.class);
-        int requestID = (int)System.currentTimeMillis();
-        int flags = PendingIntent.FLAG_CANCEL_CURRENT;
-        PendingIntent pendingIntent = PendingIntent.getActivity(context, requestID, intent1, flags);
+        PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent1, 0);
 
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context)
                 .setSmallIcon(R.mipmap.icon_notification)
                 .setLargeIcon(BitmapFactory.decodeResource(context.getResources(), R.mipmap.icon_app))
                 .setContentTitle("Divina Misericórdia")
                 .setContentText("Hora do Terço!")
-                .setContentIntent(pendingIntent);
-        mBuilder.setAutoCancel(true);
+                .setContentIntent(pendingIntent)
+                .setAutoCancel(true);
 
         NotificationManager mNotificationManager = (NotificationManager)context.getSystemService(Context.NOTIFICATION_SERVICE);
         mNotificationManager.notify(0, mBuilder.build());
@@ -46,7 +45,11 @@ public class AlarmReceiver extends BroadcastReceiver {
         Intent alarmIntent = new Intent(context, AlarmReceiver.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, alarmIntent, 0);
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
-        alarmManager.setRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), 24*60*60*1000, pendingIntent);
+        if(calendar.getTimeInMillis() < System.currentTimeMillis()) {
+            alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis() + AlarmManager.INTERVAL_DAY, AlarmManager.INTERVAL_DAY, pendingIntent);
+        } else {
+            alarmManager.setInexactRepeating(AlarmManager.RTC_WAKEUP, calendar.getTimeInMillis(), AlarmManager.INTERVAL_DAY, pendingIntent);
+        }
     }
 
     public void cancelAlarm(Context context) {
