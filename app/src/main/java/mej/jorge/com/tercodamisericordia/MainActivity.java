@@ -41,7 +41,12 @@ public class MainActivity extends AppCompatActivity {
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        mFragmentTransaction.replace(R.id.flContent, new PrincipalFragment()).commit();
+        String openFragment = getIntent().getStringExtra("openFragment");
+        if(openFragment != null) {
+            if(openFragment.equals("tercoFragment"))
+                mFragmentTransaction.replace(R.id.flContent, new TercoFragment2()).commit();
+        } else
+            mFragmentTransaction.replace(R.id.flContent, new PrincipalFragment()).commit();
 
         mDrawer.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override

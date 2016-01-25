@@ -26,6 +26,7 @@ public class AlarmReceiver extends BroadcastReceiver {
     public void onReceive(Context context, Intent intent) {
 
         Intent intent1 = new Intent(context, MainActivity.class);
+        intent1.putExtra("openFragment", "tercoFragment");
         PendingIntent pendingIntent = PendingIntent.getActivity(context, 0, intent1, 0);
 
         NotificationCompat.Builder mBuilder = new NotificationCompat.Builder(context)

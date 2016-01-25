@@ -1,6 +1,5 @@
 <resources>
     <string name="app_name">Divina Misericórdia</string>
-    <string name="title_activity_terco">Terço da Misericórdia</string>
     <string name="action_settings">Settings</string>
 
     <string name="menu">Menu</string>
@@ -131,10 +130,9 @@
         citados. \nCaso queira contactar o desenvolvedor, vá na página do aplicativo na Google Play e procure
         pelo contato.</string>
     <string name="texto_sobre2">Jesus, nós confiamos em Vós!</string>
-    <string name="texto_sammyra">Vamos à segunda declaração agora! Obrigado por continuar a me apoiar em tudo,
-        me dar forças e ser a minha companhia nos momentos que estou sozinho. Você continua sendo minha princesa
-        e a garota dos meus sonhos. Eu te amo e cada dia amo mais, e sei que Deus nos conduz conforme sua vontade.
-        Espero ser digno de tê-la comigo. Espero poder realizar meus sonhos ao seu lado. \nTe amo meu anjo :)</string>
+    <string name="texto_sammyra">Espero um dia ser digno de todo o amor que você dedica a mim. Esse amor tão
+        sincero, bondoso e verdadeiro que eu mesmo não conseguiria explicar. Perdoe pelos meus defeitos, desejo
+        muito que Deus me ajude a melhorá-los para que assim possamos ser ainda mais felizes. Te amo, meu anjo.</string>
 
     <!-- Texts for the fragment_begin -->
     <string name="titulo">Terço da Divina Misericórdia</string>
