@@ -35,7 +35,7 @@ public class EndFragment extends Fragment {
                 alert.show();
             }
         });
-        
+
         return view;
     }
 }
