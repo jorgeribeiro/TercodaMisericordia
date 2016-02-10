@@ -14,12 +14,19 @@
         android:gravity="center"
         android:text="@string/oracaoFinal"
         android:textSize="16sp" />
+    <Button
+        android:id="@+id/botaoOremos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/oracaoFinal"
+        android:layout_centerHorizontal="true"
+        android:text="Oremos" />
 
     <ImageView
         android:id="@+id/imgJoaoPaulo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_below="@id/oracaoFinal"
+        android:layout_below="@id/botaoOremos"
         android:layout_centerHorizontal="true"
         android:src="@drawable/joaopaulo" />
 
