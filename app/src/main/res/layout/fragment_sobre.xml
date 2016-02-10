@@ -45,6 +45,7 @@
             android:layout_height="wrap_content"
             android:layout_alignBaseline="@id/txt2"
             android:layout_centerHorizontal="true"
+            android:soundEffectsEnabled="false"
             />
 
     </RelativeLayout>
