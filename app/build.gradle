@@ -8,8 +8,8 @@ android {
         applicationId "mej.jorge.com.tercodamisericordia"
         minSdkVersion 8
         targetSdkVersion 22
-        versionCode 4
-        versionName "2.06"
+        versionCode 5
+        versionName "2.09"
     }
     buildTypes {
         release {
