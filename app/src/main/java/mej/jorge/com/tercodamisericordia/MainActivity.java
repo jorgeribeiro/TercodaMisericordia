@@ -151,7 +151,8 @@ public class MainActivity extends AppCompatActivity {
                             "- Nova interface gráfica\n" +
                             "- Acesso ao terço facilitado\n" +
                             "- Invocação do Espírito Santo incluída no terço\n" +
-                            "- Novos ícones")
+                            "- Novos ícones\n" +
+                            "- Oração final do terço complementada")
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             // Do something else

@@ -32,8 +32,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@id/timePicker"
             android:layout_centerHorizontal="true"
-            android:textOn="Alerta Ligado"
-            android:textOff="Alerta Deslig."/>
+            android:textOn="Notificação Ligada"
+            android:textOff="Notificação Deslig."/>
 
         <ImageView
             android:id="@+id/clock"

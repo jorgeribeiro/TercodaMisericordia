@@ -1,5 +1,8 @@
 package mej.jorge.com.tercodamisericordia;
 
+import android.app.AlertDialog;
+import android.content.Context;
+import android.content.DialogInterface;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.preference.PreferenceManager;
@@ -34,12 +37,19 @@ public class AlertaFragment extends Fragment {
 
         ((ToggleButton) toggleButton).setChecked(mSettings.getBoolean("statusToggleButton", false));
         ((TimePicker) timePicker).setIs24HourView(true);
+        /**
+         * TODO
+         * setCurrentHour and setCurrentMinute are deprecated in API 23
+         * In future versions, remember that I have to change to the new methods:
+         * setHour and setMinute, also valid for getHour and getMinute.
+         */
         ((TimePicker) timePicker).setCurrentHour(mSettings.getInt("hourTimePicker", 15));
         ((TimePicker) timePicker).setCurrentMinute(mSettings.getInt("minTimePicker", 0));
 
         ((ToggleButton) toggleButton).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
             public void onCheckedChanged(CompoundButton buttonView, boolean isChecked) {
+                firstClick(getActivity());
                 SharedPreferences.Editor editor = mSettings.edit();
                 if(isChecked) {
                     editor.putBoolean("statusToggleButton", true);
@@ -55,7 +65,7 @@ public class AlertaFragment extends Fragment {
 
                     if(toast != null)
                         toast.cancel();
-                    toast = Toast.makeText(getActivity(), "Alerta ligado", Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(getActivity(), "Notificação ligada", Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
                     editor.putBoolean("statusToggleButton", false);
@@ -64,7 +74,7 @@ public class AlertaFragment extends Fragment {
 
                     if(toast != null)
                         toast.cancel();
-                    toast = Toast.makeText(getActivity(), "Alerta desligado", Toast.LENGTH_SHORT);
+                    toast = Toast.makeText(getActivity(), "Notificação desligada", Toast.LENGTH_SHORT);
                     toast.show();
                 }
                 editor.apply();
@@ -72,6 +82,30 @@ public class AlertaFragment extends Fragment {
         });
 
         return view;
+    }
+
+    public void firstClick(Context context) {
+        SharedPreferences mSettings = PreferenceManager.getDefaultSharedPreferences(context);
+        boolean dialogShown = mSettings.getBoolean("firstClickShown", false);
+        if (!dialogShown) {
+            AlertDialog.Builder builder = new AlertDialog.Builder(context)
+                    .setTitle("Atenção!")
+                    .setMessage("A notificação do terço não é sonora. Na hora selecionada, " +
+                            "você receberá apenas uma notificação no seu telefone. Este aplicativo " +
+                            "não irá gerar nenhum alerta sonoro.")
+                    .setPositiveButton("OK", new DialogInterface.OnClickListener() {
+                        public void onClick(DialogInterface dialog, int which) {
+                            // Do something else
+                        }
+                    });
+            AlertDialog alert = builder.create();
+            alert.show();
+
+            SharedPreferences.Editor editor = mSettings.edit();
+            editor.putBoolean("firstClickShown", true);
+            editor.apply();
+        }
+
     }
 
 }

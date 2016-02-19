@@ -10,7 +10,7 @@
     <string name="a_devocao">A Devoção</string>
     <string name="santa_faustina">Santa Faustina</string>
     <string name="terco_da_misericordia">Terço da Misericórdia</string>
-    <string name="alerta_do_terco">Alerta do terço</string>
+    <string name="alerta_do_terco">Notificação do terço</string>
     <string name="mej">MEJ</string>
     <string name="sobre">Sobre</string>
 
@@ -101,7 +101,7 @@
     <string name="texto_alerta"><i>\"Às três horas da tarde implora À Minha Misericórdia, especialmente pelos pecadores,
         e, ao menos por um breve tempo, reflete sobre a Minha Paixão, especialmente sobre o abandono em que Me encontrei
         no momento da agonia. Esta é a Hora de grande Misericórdia para o mundo inteiro.\"</i>\n\nA Hora da Misericórdia,
-        como disse Jesus, é às três horas da tarde. Porém você pode escolher um horário no qual deseja receber um alerta
+        como disse Jesus, é às três horas da tarde. Porém você pode escolher um horário no qual deseja receber uma notificação
         para lembrá-lo da oração do Terço.</string>
 
     <!-- Texts for the fragment_mej -->
