@@ -10,9 +10,6 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-/**
- * Created by Jorge on 1/2/2016.
- */
 public class MysteryTwoFragment extends Fragment {
 
     @Override

@@ -18,24 +18,29 @@ import android.widget.ToggleButton;
 import java.util.Calendar;
 
 import mej.jorge.com.tercodamisericordia.adapters.AlarmReceiver;
+import mej.jorge.com.tercodamisericordia.adapters.AlarmSetter;
 
 public class AlertaFragment extends Fragment {
     public AlertaFragment(){}
 
     private static Toast toast;
-    private AlarmReceiver alarmReceiver;
+    private AlarmSetter alarmSetter;
+    private SharedPreferences mSettings;
+    final String KEY_TOGGLE_BUTTON = "statusToggleButton";
+    final String KEY_HOUR = "hourTimePicker";
+    final String KEY_MINUTE = "minTimePicker";
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.fragment_alerta, container, false);
-        alarmReceiver = new AlarmReceiver();
 
-        final SharedPreferences mSettings = PreferenceManager.getDefaultSharedPreferences(getActivity());
+        alarmSetter = new AlarmSetter();
+        mSettings = PreferenceManager.getDefaultSharedPreferences(getActivity());
         final View timePicker = view.findViewById(R.id.timePicker);
         final View toggleButton = view.findViewById(R.id.toggleButton);
 
-        ((ToggleButton) toggleButton).setChecked(mSettings.getBoolean("statusToggleButton", false));
+        ((ToggleButton) toggleButton).setChecked(mSettings.getBoolean(KEY_TOGGLE_BUTTON, false));
         ((TimePicker) timePicker).setIs24HourView(true);
         /**
          * TODO
@@ -43,8 +48,8 @@ public class AlertaFragment extends Fragment {
          * In future versions, remember that I have to change to the new methods:
          * setHour and setMinute, also valid for getHour and getMinute.
          */
-        ((TimePicker) timePicker).setCurrentHour(mSettings.getInt("hourTimePicker", 15));
-        ((TimePicker) timePicker).setCurrentMinute(mSettings.getInt("minTimePicker", 0));
+        ((TimePicker) timePicker).setCurrentHour(mSettings.getInt(KEY_HOUR, 15));
+        ((TimePicker) timePicker).setCurrentMinute(mSettings.getInt(KEY_MINUTE, 0));
 
         ((ToggleButton) toggleButton).setOnCheckedChangeListener(new CompoundButton.OnCheckedChangeListener() {
             @Override
@@ -52,25 +57,24 @@ public class AlertaFragment extends Fragment {
                 firstClick(getActivity());
                 SharedPreferences.Editor editor = mSettings.edit();
                 if(isChecked) {
-                    editor.putBoolean("statusToggleButton", true);
-                    editor.putInt("hourTimePicker", ((TimePicker) timePicker).getCurrentHour());
-                    editor.putInt("minTimePicker", ((TimePicker) timePicker).getCurrentMinute());
+                    editor.putBoolean(KEY_TOGGLE_BUTTON, true);
+                    editor.putInt(KEY_HOUR, ((TimePicker) timePicker).getCurrentHour());
+                    editor.putInt(KEY_MINUTE, ((TimePicker) timePicker).getCurrentMinute());
 
                     Calendar calendar = Calendar.getInstance();
                     calendar.setTimeInMillis(System.currentTimeMillis());
                     calendar.set(Calendar.HOUR_OF_DAY, ((TimePicker) timePicker).getCurrentHour());
                     calendar.set(Calendar.MINUTE, ((TimePicker) timePicker).getCurrentMinute());
                     calendar.clear(Calendar.SECOND);
-                    alarmReceiver.setAlarm(getActivity(), calendar);
+                    alarmSetter.setAlarm(getActivity(), calendar);
 
                     if(toast != null)
                         toast.cancel();
                     toast = Toast.makeText(getActivity(), "Notificação ligada", Toast.LENGTH_SHORT);
                     toast.show();
                 } else {
-                    editor.putBoolean("statusToggleButton", false);
-
-                    alarmReceiver.cancelAlarm(getActivity());
+                    editor.putBoolean(KEY_TOGGLE_BUTTON, false);
+                    alarmSetter.cancelAlarm(getActivity());
 
                     if(toast != null)
                         toast.cancel();
@@ -80,7 +84,6 @@ public class AlertaFragment extends Fragment {
                 editor.apply();
             }
         });
-
         return view;
     }
 
@@ -105,7 +108,6 @@ public class AlertaFragment extends Fragment {
             editor.putBoolean("firstClickShown", true);
             editor.apply();
         }
-
     }
 
 }

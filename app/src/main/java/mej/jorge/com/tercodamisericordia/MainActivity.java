@@ -143,16 +143,13 @@ public class MainActivity extends AppCompatActivity {
 
     public void newFeatures(Context context) {
         SharedPreferences mSettings = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean dialogShown = mSettings.getBoolean("dialogShown", false);
+        boolean dialogShown = mSettings.getBoolean("dialogShownNewVersion", false);
         if (!dialogShown) {
             AlertDialog.Builder builder = new AlertDialog.Builder(context)
                     .setTitle("Novidades da nova versão!")
-                    .setMessage("- Alerta do terço \n" +
-                            "- Nova interface gráfica\n" +
-                            "- Acesso ao terço facilitado\n" +
-                            "- Invocação do Espírito Santo incluída no terço\n" +
-                            "- Novos ícones\n" +
-                            "- Oração final do terço complementada")
+                    .setMessage("- Oração final do terço complementada e corrigida\n" +
+                            "- Notificação do terço consertada\n" +
+                            "(continua a funcionar mesmo após desligar ou reiniciar o telefone)")
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             // Do something else
@@ -162,7 +159,8 @@ public class MainActivity extends AppCompatActivity {
             alert.show();
 
             SharedPreferences.Editor editor = mSettings.edit();
-            editor.putBoolean("dialogShown", true);
+            editor.putBoolean("dialogShownNewVersion", true);
+            editor.putBoolean("dialogShown", false);
             editor.apply();
         }
 

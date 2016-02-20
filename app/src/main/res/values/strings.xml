@@ -130,10 +130,12 @@
         citados. \nCaso queira contactar o desenvolvedor, vá na página do aplicativo na Google Play e procure
         pelo contato.</string>
     <string name="texto_sobre2">Jesus, nós confiamos em Vós!</string>
-    <string name="texto_sammyra">A Deus dedico nós dois, e a Ele peço que sejamos abençoados e que saibamos acima
-        de tudo respeitar e dignificar o nosso amor. Que também Nossa Senhora e São José intercedam por nós dois
-        e por nossa oferta de amor conjunta. Que Deus nos ilumine e o Sagrado Coração seja sempre nossa inspiração.
-        I love you :)</string>
+    <string name="texto_sammyra">Meu amor, nos aproximamos de completar um ano de união. Crescemos muito nesse
+        tempo, e na graça de Deus continuamos a crescer. Sei que nas nossas falhas Deus nos abençoa, e
+        pedirei a Ele que possamos superar todos os medos e dificuldades para sermos dignos de termos uma
+        união acompanhada sempre da presença de Nosso Senhor. Admiro-a, respeito-a, e sou muito feliz por
+        poder caminhar contigo. Obrigado por sempre ser essa grande amiga e companheira, e por me levar
+        pra perto de Deus quando eu não consigo encontrá-Lo. \nTe amo muito minha paixão.</string>
 
     <!-- Texts for the fragment_begin -->
     <string name="titulo">Terço da Divina Misericórdia</string>
@@ -169,7 +171,7 @@
     <string name="oracaoFinal">Deus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo
         inteiro\nDeus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo inteiro\nDeus Santo,
         Deus forte, Deus Imortal, tende piedade de nós e do mundo inteiro, Amém.</string>
-    <string name="oremosFinal">Oremos: Ó Deus Eterno, em quem a misericórdia é insondável e o tesouso da paixão é
+    <string name="oremosFinal">Oremos: Ó Deus Eterno, em quem a misericórdia é insondável e o tesouro da paixão é
         inesgotável, olhai propício para nós e multiplicai em nós a Vossa Misericórdia, para que não nos desesperemos
         nos momentos difíceis, nem esmoreçamos, mas nos submetamos com grande confiança à Vossa santa vontade, que é
         o Amor e a própria Misericórdia.</string>

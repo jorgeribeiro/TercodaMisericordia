@@ -8,9 +8,6 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-/**
- * Created by Jorge on 1/2/2016.
- */
 public class EndFragment extends Fragment {
 
     @Override

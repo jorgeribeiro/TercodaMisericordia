@@ -8,9 +8,6 @@ import android.view.ViewGroup;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
-/**
- * Created by Jorge on 1/2/2016.
- */
 public class BeginFragment extends Fragment {
 
     @Override
