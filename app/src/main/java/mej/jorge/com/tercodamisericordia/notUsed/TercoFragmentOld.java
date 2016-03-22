@@ -13,15 +13,15 @@ import android.widget.TextView;
 
 import mej.jorge.com.tercodamisericordia.R;
 
-public class TercoFragment extends Fragment {
+public class TercoFragmentOld extends Fragment {
     public static final String ARG_PAGE = "ARG_PAGE";
     public static final String PREFS_NAME = "MyPrefsFile";
     private int mPage;
 
-    public static TercoFragment newInstance(int page) {
+    public static TercoFragmentOld newInstance(int page) {
         Bundle args = new Bundle();
         args.putInt(ARG_PAGE, page);
-        TercoFragment fragment = new TercoFragment();
+        TercoFragmentOld fragment = new TercoFragmentOld();
         fragment.setArguments(args);
         return fragment;
     }
@@ -55,7 +55,7 @@ public class TercoFragment extends Fragment {
 
         View view;
         if(mPage == 1) {
-            view = inflater.inflate(R.layout.fragment_begin, container, false);
+            view = inflater.inflate(R.layout.fragment_begin_terco, container, false);
             View buttonPaiNosso = view.findViewById(R.id.botaoPaiNosso);
             buttonPaiNosso.setOnClickListener(new View.OnClickListener() {
                 @Override
@@ -105,9 +105,9 @@ public class TercoFragment extends Fragment {
                 }
             });
         } else if(mPage == 7) {
-            view = inflater.inflate(R.layout.fragment_end, container, false);
+            view = inflater.inflate(R.layout.fragment_end_terco, container, false);
         } else {
-            view = inflater.inflate(R.layout.fragment_page, container, false);
+            view = inflater.inflate(R.layout.fragment_page_terco, container, false);
             View imgViewMystery = view.findViewById(R.id.imgMisterio1);
             View textViewIntro = view.findViewById(R.id.intro1);
             View textViewMystery = view.findViewById(R.id.misterio1);

@@ -14,10 +14,7 @@ import android.widget.CompoundButton;
 import android.widget.TimePicker;
 import android.widget.Toast;
 import android.widget.ToggleButton;
-
 import java.util.Calendar;
-
-import mej.jorge.com.tercodamisericordia.adapters.AlarmReceiver;
 import mej.jorge.com.tercodamisericordia.adapters.AlarmSetter;
 
 public class AlertaFragment extends Fragment {

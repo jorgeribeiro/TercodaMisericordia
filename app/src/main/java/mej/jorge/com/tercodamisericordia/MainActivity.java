@@ -20,8 +20,7 @@ public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
     NavigationView mDrawer;
-    private DrawerLayout mDrawerLayout;
-    private ActionBarDrawerToggle mDrawerToggle;
+    DrawerLayout mDrawerLayout;
 
     FragmentManager mFragmentManager;
     FragmentTransaction mFragmentTransaction;
@@ -30,6 +29,8 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        ActionBarDrawerToggle mDrawerToggle;
 
         newFeatures(this);
 
@@ -41,12 +42,11 @@ public class MainActivity extends AppCompatActivity {
 
         mFragmentManager = getSupportFragmentManager();
         mFragmentTransaction = mFragmentManager.beginTransaction();
-        String openFragment = getIntent().getStringExtra("openFragment");
-        if(openFragment != null) {
-            if(openFragment.equals("tercoFragment"))
-                mFragmentTransaction.replace(R.id.flContent, new TercoFragment2()).commit();
-        } else
-            mFragmentTransaction.replace(R.id.flContent, new PrincipalFragment()).commit();
+        String openTercoFragment = getIntent().getStringExtra("openTercoFragment");
+        if(openTercoFragment != null) {
+            if(openTercoFragment.equals("tercoFragment"))
+                mFragmentTransaction.replace(R.id.flContent, new TercoFragment()).commit();
+        } else mFragmentTransaction.replace(R.id.flContent, new PrincipalFragment()).commit();
 
         mDrawer.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -67,17 +67,25 @@ public class MainActivity extends AppCompatActivity {
                     toolbar.setTitle(R.string.santa_faustina);
                 } else if (menuItem.getItemId() == R.id.navigation_item_4) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
-                    xfragmentTransaction.replace(R.id.flContent, new TercoFragment2()).commit();
-                    toolbar.setTitle(R.string.terco_da_misericordia);
+                    xfragmentTransaction.replace(R.id.flContent, new ObrasFragment()).commit();
+                    toolbar.setTitle(R.string.obras_de_misericordia);
                 } else if (menuItem.getItemId() == R.id.navigation_item_5) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.flContent, new TercoFragment()).commit();
+                    toolbar.setTitle(R.string.terco_da_misericordia);
+                } else if (menuItem.getItemId() == R.id.navigation_item_6) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
                     xfragmentTransaction.replace(R.id.flContent, new AlertaFragment()).commit();
                     toolbar.setTitle(R.string.alerta_do_terco);
-                } else if (menuItem.getItemId() == R.id.navigation_item_6) {
+                } else if (menuItem.getItemId() == R.id.navigation_item_7) {
+                    FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
+                    xfragmentTransaction.replace(R.id.flContent, new NovenaFragment()).commit();
+                    toolbar.setTitle(R.string.novena);
+                } else if (menuItem.getItemId() == R.id.navigation_item_8) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
                     xfragmentTransaction.replace(R.id.flContent, new MEJFragment()).commit();
                     toolbar.setTitle(R.string.mej);
-                } else if (menuItem.getItemId() == R.id.navigation_item_7) {
+                } else if (menuItem.getItemId() == R.id.navigation_item_9) {
                     FragmentTransaction xfragmentTransaction = mFragmentManager.beginTransaction();
                     xfragmentTransaction.replace(R.id.flContent, new SobreFragment()).commit();
                     toolbar.setTitle(R.string.sobre);
@@ -143,13 +151,12 @@ public class MainActivity extends AppCompatActivity {
 
     public void newFeatures(Context context) {
         SharedPreferences mSettings = PreferenceManager.getDefaultSharedPreferences(context);
-        boolean dialogShown = mSettings.getBoolean("dialogShownNewVersion", false);
+        boolean dialogShown = mSettings.getBoolean("dialogShown", false);
         if (!dialogShown) {
             AlertDialog.Builder builder = new AlertDialog.Builder(context)
                     .setTitle("Novidades da nova versão!")
-                    .setMessage("- Oração final do terço complementada e corrigida\n" +
-                            "- Notificação do terço consertada\n" +
-                            "(continua a funcionar mesmo após desligar ou reiniciar o telefone)")
+                    .setMessage("- Novena incluída\n" +
+                            "- Obras de Misericórdia incluídas")
                     .setPositiveButton("OK", new DialogInterface.OnClickListener() {
                         public void onClick(DialogInterface dialog, int which) {
                             // Do something else
@@ -159,8 +166,8 @@ public class MainActivity extends AppCompatActivity {
             alert.show();
 
             SharedPreferences.Editor editor = mSettings.edit();
-            editor.putBoolean("dialogShownNewVersion", true);
-            editor.putBoolean("dialogShown", false);
+            editor.putBoolean("dialogShownNewVersion", false);
+            editor.putBoolean("dialogShown", true);
             editor.apply();
         }
 
@@ -232,14 +239,14 @@ public class MainActivity extends AppCompatActivity {
         }
         if (mSelectedId == R.id.navigation_item_4) {
             mDrawerLayout.closeDrawer(GravityCompat.START);
-            fragmentClass = TercoFragment2.class;
+            fragmentClass = TercoFragment.class;
             try {
                 fragment = (Fragment) fragmentClass.newInstance();
             } catch (Exception e) {
                 e.printStackTrace();
             }
             FragmentManager fragmentManager = getSupportFragmentManager();
-            fragmentManager.beginTransaction().replace(R.id.flContent, new TercoFragment2()).commit();
+            fragmentManager.beginTransaction().replace(R.id.flContent, new TercoFragment()).commit();
             setTitle("Terço da Misericórdia");
             // trying to fix
             /*

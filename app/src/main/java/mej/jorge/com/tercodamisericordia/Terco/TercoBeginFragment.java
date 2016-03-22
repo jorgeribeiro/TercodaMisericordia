@@ -1,4 +1,4 @@
-package mej.jorge.com.tercodamisericordia;
+package mej.jorge.com.tercodamisericordia.Terco;
 
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
@@ -8,13 +8,15 @@ import android.view.ViewGroup;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 
-public class BeginFragment extends Fragment {
+import mej.jorge.com.tercodamisericordia.R;
+
+public class TercoBeginFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view;
 
-        view = inflater.inflate(R.layout.fragment_begin, container, false);
+        view = inflater.inflate(R.layout.fragment_begin_terco, container, false);
 
         View buttonEspiritoSanto = view.findViewById(R.id.botaoEspiritoSanto);
         buttonEspiritoSanto.setOnClickListener(new View.OnClickListener() {

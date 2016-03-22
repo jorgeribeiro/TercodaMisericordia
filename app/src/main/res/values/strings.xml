@@ -9,10 +9,22 @@
     <string name="principal">Principal</string>
     <string name="a_devocao">A Devoção</string>
     <string name="santa_faustina">Santa Faustina</string>
+    <string name="obras_de_misericordia">Obras de Misericórdia</string>
     <string name="terco_da_misericordia">Terço da Misericórdia</string>
     <string name="alerta_do_terco">Notificação do terço</string>
+    <string name="novena">Novena</string>
     <string name="mej">MEJ</string>
     <string name="sobre">Sobre</string>
+
+    <string name="titulo_primeiro_dia">Primeiro Dia</string>
+    <string name="titulo_segundo_dia">Segundo Dia</string>
+    <string name="titulo_terceiro_dia">Terceiro Dia</string>
+    <string name="titulo_quarto_dia">Quarto Dia</string>
+    <string name="titulo_quinto_dia">Quinto Dia</string>
+    <string name="titulo_sexto_dia">Sexto Dia</string>
+    <string name="titulo_setimo_dia">Sétimo Dia</string>
+    <string name="titulo_oitavo_dia">Oitavo Dia</string>
+    <string name="titulo_nono_dia">Nono Dia</string>
 
     <!-- Texts for the fragment_principal -->
     <string name="texto_principal">Bem vindo ao aplicativo dedicado à Divina Misericórdia!\nDesenvolvido com o
@@ -116,7 +128,7 @@
         e por isso era necessário a intercessão de todos para que se atingisse a paz. Nesse contexto, o MEJ
         foi oficializado no mundo inteiro, inclusive no Brasil.</string>
     <string name="texto_mej3">Então em 1960, a Cruzada Eucarística peregrinou a Roma e se encontrou com o Papa
-        João XXIII, que ao se referir ao grupo, o chamava de "Movimento" em vez de "Cruzada". A partir daí
+        João XXIII, que ao se referir ao grupo, o chamava de \"Movimento\" em vez de \"Cruzada\". A partir daí
         começa-se a utilizar o nome Movimento Eucarístico Jovem.</string>
     <string name="texto_mej4">O MEJ e o Sagrado Coração de Jesus foram a inspiração para o desenvolvimento
         desse aplicativo. Conheça o Movimento e a devoção! \nPromessa no. 11: <i>Aqueles que propagarem esta
@@ -130,14 +142,41 @@
         citados. \nCaso queira contactar o desenvolvedor, vá na página do aplicativo na Google Play e procure
         pelo contato.</string>
     <string name="texto_sobre2">Jesus, nós confiamos em Vós!</string>
-    <string name="texto_sammyra">Meu amor, nos aproximamos de completar um ano de união. Crescemos muito nesse
-        tempo, e na graça de Deus continuamos a crescer. Sei que nas nossas falhas Deus nos abençoa, e
-        pedirei a Ele que possamos superar todos os medos e dificuldades para sermos dignos de termos uma
-        união acompanhada sempre da presença de Nosso Senhor. Admiro-a, respeito-a, e sou muito feliz por
-        poder caminhar contigo. Obrigado por sempre ser essa grande amiga e companheira, e por me levar
-        pra perto de Deus quando eu não consigo encontrá-Lo. \nTe amo muito minha paixão.</string>
+    <string name="texto_sammyra">Minha princesa, completamos nosso primeiro ano! E a parte mais incrível desse
+        um ano? Não há um dia que eu não me apaixone mais por você. Você me fez redescobrir o amor nos outros
+        e em mim, me fez ter mais confiança, acreditar nos planos de Deus e também no Seu amor divino. Quão bom
+        é acordar e receber o seu bom dia, e também um boa noite antes de dormir. Quão bom é sentir meu coração
+        bater forte quando você diz que me ama, quão bom é no fim de tudo, ter você ao meu lado. Obrigado pelo
+        seu amor, pela sua dedicação comigo. Que Deus nos abençoe cada vez mais todos os dias. Te amo muito,
+        amor da minha vida.</string>
 
-    <!-- Texts for the fragment_begin -->
+    <!-- Texts for the fragment_obras -->
+    <string name="texto_obras1">Conforme o Catecismo da Igreja Católica n. 2447:\nAs obras de misericórdia são as
+        ações caridosas pelas quais vamos em ajuda do nosso próximo, nas suas necessidades corporais e espirituais.
+        Instruir, aconselhar, consolar, confortar, são obras de misericórdia espirituais, como perdoar e suportar
+        com paciência. As obras de misericórdia corporais consistem nomeadamente em dar de comer a quem tem fome,
+        albergar quem não tem teto, vestir os nus, visitar os doentes e os presos, sepultar os mortos. Entre estes
+        gestos, a esmola dada aos pobres é um dos principais testemunhos da caridade fraterna e também uma prática
+        de justiça que agrada a Deus.\nAs obras de misericórdia são divididas entre Corporais e Espirituais.</string>
+    <string name="lista_obras_corporais"><b>Obras de misericórdia corporais:</b>\n1. Dar de comer a quem tem fome
+        \n2. Dar de beber a quem tem sede\n3. Dar pousada aos peregrinos\n4. Vestir os nus\n5. Visitar os enfermos
+        \n6. Visitar os presos\n7. Enterrar os mortos</string>
+    <string name="lista_obras_espirituais"><b>Obras de misericórdia espirituais:</b>\n1. Ensinar os ignorantes
+        \n2. Dar bom conselho\n3. Corrigir os que erram\n4. Perdoar as injúrias\n5. Consolar os tristes
+        \n6. Sofrer com paciência as fraquezas do nosso próximo\n7. Rezar a Deus por vivos e defundos</string>
+    <string name="texto_obras2">O exercício das Obras de misericórdia comunica graças a quem as exerce. No evangelho
+        de S. Lucas Jesus diz: \'Dai, e ser-vos-á dado\'. Por isso, com as Obras de misericórdia fazemos a vontade de
+        Deus, damos algo que é nosso aos outros e o Senhor promete que nos dará também a nós aquilo de que necessitamos.
+        \nPor outro lado, um modo de ir apagando a pena que fica na alma pelos nossos pecados já perdoados é mediante as
+        boas obras. Boas obras são, obviamente as Obras de misericórdia. \"Bem-aventurados os misericordiosos, porque eles
+        alcançarão misericórdia\" (Mt 5, 7), é uma das Bem-Aventuranças. As Obras de misericórdia também nos vão tornando
+        mais parecidos com Jesus, nosso modelo, que nos ensinou como deve ser a nossa atitude para com os outros. No
+        evangelho de S. Mateus encontramos as seguintes palavras de Cristo: <i>\"Não entesoureis tesouros na terra, onde a
+        traça os corrói, e onde os ladrões os roubam, mas amontoai tesouros no céu, onde a traça os não corrói, onde os
+        ladrões não os roubam. Porque onde estiver o vosso tesouro, aí estará também o vosso coração\"</i>. Seguindo este
+        ensinamento do Senhor trocamos os bens temporais pelos eternos, que são os que valem de verdade.</string>
+
+    <!-- Texts for the fragment_begin_terco -->
     <string name="titulo">Terço da Divina Misericórdia</string>
     <string name="oracaoInicio">Em nome do Pai e do Filho e do Espírito Santo &#8224;</string>
     <string name="oracaoEspiritoSanto">Vinde Espírito Santo, enchei os corações dos vossos fiéis, e
@@ -159,7 +198,7 @@
         os vivos e os mortos; creio no Espírito Santo, na Santa Igreja Católica, na comunhão dos santos, na
         remissão dos pecados, na ressurreição da carne, na vida eterna.</string>
 
-    <!-- Texts for the fragment_page -->
+    <!-- Texts for the fragment_page_terco -->
     <string name="oracaoEternoPai">Eterno Pai, eu Vos ofereço o Corpo e o Sangue, a Alma e Divindade de Vosso
         Diletíssimo Filho, Nosso Senhor Jesus Cristo, em expiação dos nossos pecados e os do mundo inteiro.</string>
     <string name="oracaoDolorosaPaixao">Pela Sua dolorosa Paixão; tende misericórdia de nós e do mundo inteiro
@@ -167,7 +206,7 @@
     <string name="oracaoSangueeAgua">Ó Sangue e Água que jorrastes do Coração de Jesus como fonte de
         misericórdia para nós, nós confiamos em Vós.</string>
 
-    <!-- Texts for the fragment_end -->
+    <!-- Texts for the fragment_end_terco -->
     <string name="oracaoFinal">Deus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo
         inteiro\nDeus Santo, Deus Forte, Deus Imortal, tende piedade de nós e do mundo inteiro\nDeus Santo,
         Deus forte, Deus Imortal, tende piedade de nós e do mundo inteiro, Amém.</string>
@@ -221,4 +260,109 @@
         muitas almas ao céu. Quando te parecer que o sofrimento ultrapassa as tuas forças, olha para as Minhas
         Chagas, e te elevarás acima do desprezo e do juízo dos homens. A meditação sobre a Minha Paixão te
         ajudará a te elevares acima de tudo\"</i>. Compreendi muitas coisas que antes não era capaz de entender.</string>
+
+    <!-- Texts for the fragment_begin_terco -->
+    <string name="titulo_novena">Novena à Divina Misericórdia</string>
+    <string name="texto_begin1"> \"Novena à Divina Misericórdia que Jesus me mandou escrever e rezar antes da Festa da
+         Misericórdia Começa na sexta-feira santa.\" \nDesejo que, durante estes nove dias, conduzas as almas à fonte
+        da Minha misericórdia, a fim de que recebam força, alívio e todas as graças de que necessitam nas dificuldades
+        da vida e, especialmente na hora da morte. Cada dia conduzirás ao Meu Coração um grupo diferente de almas e as
+        mergulharás nesse oceano da Minha misericórdia. Eu conduzirei todas essas almas à Casa de Meu Pai. Procederás
+        assim nesta vida e na futura. Por Minha parte, nada negarei àquelas almas que tu conduzirás à fonte da Minha
+        misericórdia. Cada dia pedirás a Meu Pai, pela Minha amarga Paixão, graças para essas almas.</string>
+    <string name="texto_begin2">\nNovena extraída do site\nwww.jesus-misericordioso.com\npertencente à Congregação das Irmãs
+        de Jesus Misericordioso. Conheça a obra!</string>
+
+    <!-- Texts for the Days -->
+    <string name="titulo_terco">[Terço da Divina Misericórdia]</string>
+    <string name="titulo_jesus">[Palavras de Jesus]</string>
+    <string name="titulo_faustina">[Oração de Santa Faustina]</string>
+
+    <string name="primeiro_dia_jesus"><i>Hoje, traze-Me a humanidade inteira, especialmente todos os pecadores e mergulha-os no oceano da
+        Minha misericórdia. Com isso Me consolarás na amarga tristeza em que Me afunda a perda das almas.</i></string>
+    <string name="primeiro_dia_faustina">Misericordiosíssimo Jesus, de quem é próprio ter compaixão de nós e nos perdoar, não olheis os
+        nossos pecados, mas a confiança que depositamos em Vossa infinita bondade. Acolhei-nos na mansão do vosso compassivo Coração e nunca nos
+        deixeis sair dele. Nós vo-lo pedimos pelo amor que Vos une ao Pai e ao Espírito Santo.\n
+        Eterno Pai, olhai com misericórdia para toda humanidade, encerrada no Coração compassivo de Jesus, mas especialmente
+        para os pobres pecadores. Pela Sua dolorosa Paixão, mostrai-nos a Vossa misericórdia, para que glorifiquemos a
+        onipotência da Vossa misericórdia, por toda a eternidade. Amém.</string>
+    <string name="segundo_dia_jesus"><i>Hoje, traze-Me as almas dos sacerdotes e religiosos e mergulha-as na Minha insondável misericórdia.
+        Elas Me deram força para suportar a amarga Paixão. Por elas, como por canais, corre para a humanidade a Minha misericórdia.</i></string>
+    <string name="segundo_dia_faustina">Misericordiosíssimo Jesus, de quem provém tudo que é bom, aumentai em nós a graça, para que
+        pratiquemos dignas obras de misericórdia, a fim de que aqueles que olham para nós, glorifiquem o Pai da misericórdia que está no Céu.\n
+        Eterno Pai, dirigi o olhar da Vossa misericórdia para a porção eleita da vossa vinha: para as almas dos sacerdotes e
+        religiosos. Concedei-lhes o poder da vossa bênção e, pelos sentimentos do Coração de vosso Filho, no qual estão encerradas,
+        dai-lhes a força da vossa luz, para que possam guiar os outros nos caminhos da salvação e juntamente com eles cantar a glória
+        da Vossa insondável misericórdia, por toda a eternidade. Amém.</string>
+    <string name="terceiro_dia_jesus"><i>Hoje, traze-Me todas as almas piedosas e fiéis e mergulha-as no oceano da Minha misericórdia. Estas almas consolaram-Me na
+        Via-sacra; foram aquela gota de consolações em meio ao mar de amarguras.</i></string>
+    <string name="terceiro_dia_faustina">Misericordiosíssimo Jesus, que concedeis prodigamente a todos as graças do tesouro da Vossa misericórdia,
+        acolhei-nos na mansão do Vosso compassivo Coração e não nos deixeis sair dele pelos séculos; suplicamo-Vos pelo amor inconcebível de que está
+        inflamado o vosso Coração para com o Pai celestial.\n
+        Eterno Pai, olhai com misericórdia para as almas fiéis, como a herança do Vosso Filho. Pela sua dolorosa Paixão concedei-lhes a
+        vossa bênção e cercai-as da vossa incessante proteção, para que não percam o amor e o tesouro da santa fé, mas com toda a multidão
+        dos Anjos e dos Santos glorifiquem a Vossa imensa misericórdia, por toda a eternidade. Amém.</string>
+    <string name="quarto_dia_jesus"><i>Hoje, traze-Me os pagãos e aqueles que ainda não Me conhecem e nos quais pensei na minha amarga Paixão. O seu futuro zelo consolou o
+        meu Coração. Mergulha-os no mar da Minha misericórdia.</i></string>
+    <string name="quarto_dia_faustina">Misericordiosíssimo Jesus, que sois a luz de todo o mundo, aceitai na mansão do vosso compassivo Coração as almas dos
+        pagãos que ainda não Vos conhecem. Que os raios da vossa graça os iluminem para que também eles, juntamente conosco, glorifiquem as maravilhas da Vossa
+        misericórdia e não os deixeis sair da mansão do vosso compassivo Coração.\n
+        Eterno Pai, olhai com misericórdia para as almas dos pagãos e daqueles que ainda não Vos conhecem e que estão encerrados no Coração
+        compassivo de Jesus. Atraí-as à luz do Evangelho. Essas almas não sabem que grande felicidade é amar-Vos. Fazei com que também elas
+        glorifiquem a riqueza da Vossa misericórdia, por toda a eternidade. Amém.</string>
+    <string name="quinto_dia_jesus"><i>Hoje, traze-Me as almas dos Cristãos separados da Unidade da Igreja e mergulha-as no mar da Minha misericórdia. Na minha amarga Paixão
+        dilaceravam o Meu corpo e o Meu Coração, isto é, a Minha Igreja. Quando voltam à unidade da Igreja, cicatrizam-se as minhas Chagas e
+        dessa maneira eles aliviam a Minha paixão.</i></string>
+    <string name="quinto_dia_faustina">Misericordiosíssimo Jesus que sois a própria Bondade, Vós não negais a luz àqueles que Vos pedem, aceitai na mansão do vosso
+        compassivo Coração as almas dos nossos irmãos separados, e atraí-os pela vossa luz à unidade da Igreja e não os deixeis sair da mansão do vosso
+        compassivo Coração, mas fazei com que também eles glorifiquem a riqueza da Vossa misericórdia.\n
+        Eterno Pai, olhai com misericórdia para as almas dos nossos irmãos separados que esbanjaram os vossos bens e abusaram das vossas graças,
+        permanecendo teimosamente nos seus erros. Não olheis para os seus erros, mas para o amor do vosso Filho e para a sua amarga Paixão, que
+        suportou por eles, pois também eles estão encerrados no Coração compassivo de Jesus. Fazei com que também eles glorifiquem a Vossa
+        misericórdia por toda a eternidade. Amém.</string>
+    <string name="sexto_dia_jesus"><i>Hoje, traze-Me as almas mansas, assim como as almas das criancinhas, e mergulha-as na Minha misericórdia. Estas almas são as
+        mais semelhantes ao meu Coração. Elas reconfortaram-Me na minha amarga Paixão da minha agonia. Eu as vi quais anjos terrestres que futuramente iriam velar
+        junto aos meus altares. Sobre elas derramo torrentes de graças. Só a alma humilde é capaz de aceitar a minha graça; às almas humildes favoreço com a
+        minha confiança.</i></string>
+    <string name="sexto_dia_faustina">Misericordiosíssimo Jesus, que dissestes: <i>\"Aprendei de Mim que sou manso e humilde de coração\"</i>, aceitai na mansão do
+        vosso compassivo Coração as almas mansas e humildes e as almas das criancinhas. Estas almas encantam o Céu todo e são a especial predileção do Pai
+        Celestial, são como um ramalhete diante do trono de Deus, com cujo perfume o próprio Deus se deleita. Estas almas têm a mansão permanente no Coração
+        compassivo de Jesus e cantam sem cessar um hino de amor e misericórdia pelos séculos.\n Eterno Pai, olhai com misericórdia para as almas mansas e
+        humildes e para as almas das criancinhas, que estão encerradas na mansão compassiva do Coração de Jesus. Estas almas são as mais semelhantes a vosso Filho;
+        o perfume destas almas eleva-se da Terra e alcança o vosso trono. Pai de misericórdia e de toda bondade, suplico-Vos pelo amor e predileção que tendes
+        para com estas almas, abençoai o mundo todo, para que todas as almas cantem juntamente a glória à Vossa misericórdia, por toda a eternidade. Amém.</string>
+    <string name="setimo_dia_jesus"><i>Hoje, traze-Me as almas que veneram e glorificam de maneira especial a Minha misericórdia e mergulha-as na Minha misericórdia. Estas
+        almas foram as que mais sofreram por causa da minha Paixão e penetraram mais profundamente no meu espírito. Elas são a imagem viva do
+        meu Coração compassivo. Estas almas brilharão com especial fulgor na vida futura. Nenhuma delas irá ao fogo do Inferno; defenderei cada
+        uma delas de maneira especial na hora da morte.</i></string>
+    <string name="setimo_dia_faustina">Misericordiosíssimo Jesus, cujo Coração é o próprio amor, aceitai na mansão do vosso compassivo Coração as almas que
+        honram a glorificam de maneira especial a grandeza da Vossa misericórdia. Estas almas, tornadas poderosas pela força do próprio Deus, avançam entre penas e
+        adversidades, confiando na Vossa misericórdia. Estas almas estão unidas com Jesus e carregam sobre os seus ombros a humanidade toda. Elas
+        não serão julgadas severamente, mas a Vossa misericórdia as envolverá no momento da morte.\n
+        Eterno Pai, olhai com misericórdia para as almas que glorificam e honram o vosso maior atributo, isto é, a vossa inescrutável Misericórdia;
+        elas estão encerradas no Coração compassivo de Jesus. Estas almas são o Evangelho vivo e as suas mãos estão cheias de obras de misericórdia;
+        suas almas repletas de alegria cantam um hino de misericórdia ao Altíssimo. Suplico-Vos, ó Deus, mostrai-lhes a Vossa misericórdia segundo a
+        esperança e confiança que em Vós colocaram. Que se cumpra nelas a promessa de Jesus, que disse: <i>\"As almas que veneram a minha insondável
+        Misericórdia, Eu mesmo as defenderei durante a vida, especialmente na hora da morte, como minha glória\"</i>. Amém.</string>
+    <string name="oitavo_dia_jesus"><i>Hoje, traze-Me as almas que se encontram na prisão do Purgatório e mergulha-as no abismo da Minha misericórdia; que as torrentes do meu Sangue
+        refresquem o seu ardor. Todas estas almas são muito amadas por Mim, pagam as dívidas à Minha justiça. Está em teu alcance trazer-lhes alívio.
+        Retira do tesouro da Minha Igreja todas as indulgências e oferece-as por elas. Oh, se conhecesses o seu tormento, incessantemente oferecerias
+        por elas a esmolas do espírito e pagarias as suas dívidas à Minha justiça.</i></string>
+    <string name="oitavo_dia_faustina">Misericordiosíssimo Jesus, que dissestes que quereis misericórdia, eis que estou trazendo à mansão do vosso
+        compassivo Coração as almas do Purgatório, almas que Vos são muito queridas e que, no entanto, devem dar reparação à Vossa justiça; que as
+        torrentes de Sangue e Água que brotaram do vosso Coração apaguem as chamas do fogo do Purgatório, para que também ali seja glorificado o poder da Vossa misericórdia.\n
+        Eterno Pai, olhai com misericórdia para as almas que sofrem no Purgatório e que estão encerradas no Coração compassivo de Jesus. Suplico-Vos
+        que, pela dolorosa Paixão de Jesus, vosso Filho, e por toda a amargura de que estava inundada a sua Alma santíssima, mostreis Vossa misericórdia
+        às almas que se encontram sob o olhar da vossa Justiça; não olheis para elas de outra forma senão através das Chagas de Jesus, vosso Filho muito
+        amado, porque nós cremos que a vossa bondade e misericórdia são incomensuráveis. Amém.</string>
+    <string name="nono_dia_jesus"><i>Hoje, traze-Me as almas tíbias e mergulha-as no abismo da Minha misericórdia. Estas almas ferem mais dolorosamente o meu Coração. Foi da alma
+        tíbia que a minha Alma sentiu repugnância no Horto. Elas levaram-Me a dizer: Pai afasta de Mim este cálice, se assim for a vossa vontade.
+        Para elas, a última tábua de salvação é recorrer a Minha misericórdia.</i></string>
+    <string name="nono_dia_faustina">Ó compassivo Jesus, que sois a própria Compaixão, trago à mansão do vosso compassivo Coração as almas tíbias; que se aqueçam no fogo do Vosso amor
+        puro estas almas geladas que, semelhantes a cadáveres, Vos enchem de tanta repugnância. Ó Jesus, muito compassivo, usai a onipotência da Vossa
+        misericórdia e atraí-as até ao fogo do Vosso amor e concedei-lhes o amor santo, porque Vós tudo podeis.\n
+        Eterno Pai, olhai com misericórdia para as almas tíbias e que estão encerradas no Coração compassivo de Jesus. Pai de misericórdia, suplico-Vos
+        pela amargura da Paixão do Vosso Filho e por Sua agonia de três horas na Cruz, permiti que também elas glorifiquem o abismo da Vossa misericórdia.
+        Amém. (Diário, 1209-1229)</string>
+    
 </resources>

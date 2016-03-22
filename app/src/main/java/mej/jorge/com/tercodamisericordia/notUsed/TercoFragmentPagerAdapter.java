@@ -5,8 +5,6 @@ import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
 import android.support.v4.app.FragmentPagerAdapter;
 
-import mej.jorge.com.tercodamisericordia.notUsed.TercoFragment;
-
 public class TercoFragmentPagerAdapter extends FragmentPagerAdapter {
     final int PAGE_COUNT = 7;
     private String tabTitles[] = new String[] { "Início", "1º Mistério", "2º Mistério", "3º Mistério", "4º Mistério",
@@ -25,7 +23,7 @@ public class TercoFragmentPagerAdapter extends FragmentPagerAdapter {
 
     @Override
     public Fragment getItem(int position) {
-        return TercoFragment.newInstance(position + 1);
+        return TercoFragmentOld.newInstance(position + 1);
     }
 
     @Override

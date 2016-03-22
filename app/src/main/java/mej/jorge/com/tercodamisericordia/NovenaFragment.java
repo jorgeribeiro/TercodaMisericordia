@@ -10,19 +10,21 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class TercoFragment2 extends Fragment {
+import mej.jorge.com.tercodamisericordia.Novena.*;
+
+public class NovenaFragment extends Fragment {
 
     public static TabLayout tabLayout;
     public static ViewPager viewPager;
-    public static int int_items = 7;
+    public static int int_items = 10;
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
 
-        View x = inflater.inflate(R.layout.fragment_terco, null);
-        tabLayout = (TabLayout) x.findViewById(R.id.sliding_tabs);
-        viewPager = (ViewPager) x.findViewById(R.id.viewpager);
+        View view = inflater.inflate(R.layout.fragment_novena, container, false);
+        tabLayout = (TabLayout) view.findViewById(R.id.sliding_tabs);
+        viewPager = (ViewPager) view.findViewById(R.id.viewpager);
 
         viewPager.setAdapter(new MyAdapter(getChildFragmentManager()));
         tabLayout.post(new Runnable() {
@@ -32,7 +34,7 @@ public class TercoFragment2 extends Fragment {
             }
         });
 
-        return x;
+        return view;
     }
 
     class MyAdapter extends FragmentPagerAdapter {
@@ -44,13 +46,16 @@ public class TercoFragment2 extends Fragment {
         @Override
         public Fragment getItem(int position) {
             switch (position) {
-                case 0 : return new BeginFragment();
-                case 1 : return new MysteryOneFragment();
-                case 2 : return new MysteryTwoFragment();
-                case 3 : return new MysteryThreeFragment();
-                case 4 : return new MysteryFourFragment();
-                case 5 : return new MysteryFiveFragment();
-                case 6 : return new EndFragment();
+                case 0 : return new NovenaBeginFragment();
+                case 1 : return new DayOneFragment();
+                case 2 : return new DayTwoFragment();
+                case 3 : return new DayThreeFragment();
+                case 4 : return new DayFourFragment();
+                case 5 : return new DayFiveFragment();
+                case 6 : return new DaySixFragment();
+                case 7 : return new DaySevenFragment();
+                case 8 : return new DayEightFragment();
+                case 9 : return new DayNineFragment();
             }
             return null;
         }
@@ -58,13 +63,16 @@ public class TercoFragment2 extends Fragment {
         @Override
         public CharSequence getPageTitle(int position) {
             switch(position) {
-                case 0 : return "Início";
-                case 1 : return "1º Mistério";
-                case 2 : return "2º Mistério";
-                case 3 : return "3º Mistério";
-                case 4 : return "4º Mistério";
-                case 5 : return "5º Mistério";
-                case 6 : return "Final";
+                case 0 : return "Introdução";
+                case 1 : return "Primeiro Dia";
+                case 2 : return "Segundo Dia";
+                case 3 : return "Terceiro Dia";
+                case 4 : return "Quarto Dia";
+                case 5 : return "Quinto Dia";
+                case 6 : return "Sexto Dia";
+                case 7 : return "Sétimo Dia";
+                case 8 : return "Oitavo Dia";
+                case 9 : return "Nono Dia";
             }
             return null;
         }

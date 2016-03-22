@@ -1,4 +1,4 @@
-package mej.jorge.com.tercodamisericordia;
+package mej.jorge.com.tercodamisericordia.Terco;
 
 import android.app.AlertDialog;
 import android.content.DialogInterface;
@@ -10,20 +10,22 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-public class MysteryFourFragment extends Fragment {
+import mej.jorge.com.tercodamisericordia.R;
+
+public class MysteryTwoFragment extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view;
 
-        view = inflater.inflate(R.layout.fragment_page, container, false);
+        view = inflater.inflate(R.layout.fragment_page_terco, container, false);
 
         View imgViewMystery = view.findViewById(R.id.imgMisterio1);
         View textViewIntro = view.findViewById(R.id.intro1);
         View textViewMystery = view.findViewById(R.id.misterio1);
-        ((ImageView)imgViewMystery).setImageResource(R.drawable.misterio4);
-        ((TextView)textViewIntro).setText(R.string.intro4);
-        ((TextView)textViewMystery).setText(R.string.misterio4);
+        ((ImageView)imgViewMystery).setImageResource(R.drawable.misterio2);
+        ((TextView)textViewIntro).setText(R.string.intro2);
+        ((TextView)textViewMystery).setText(R.string.misterio2);
 
         View buttonEternoPai = view.findViewById(R.id.botaoEternoPai);
         buttonEternoPai.setOnClickListener(new View.OnClickListener() {

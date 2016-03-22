@@ -25,7 +25,7 @@ public class AlarmSetter extends BroadcastReceiver {
     }
 
     public void setAlarm(Context context, Calendar calendar) {
-        Intent alarmIntent = new Intent(context, AlarmReceiver.class);
+        Intent alarmIntent = new Intent(context, AlarmReceiverTerco.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, alarmIntent, 0);
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         if(calendar.getTimeInMillis() < System.currentTimeMillis()) {
@@ -36,7 +36,7 @@ public class AlarmSetter extends BroadcastReceiver {
     }
 
     public void cancelAlarm(Context context) {
-        Intent alarmIntent = new Intent(context, AlarmReceiver.class);
+        Intent alarmIntent = new Intent(context, AlarmReceiverTerco.class);
         PendingIntent pendingIntent = PendingIntent.getBroadcast(context, 0, alarmIntent, 0);
         AlarmManager alarmManager = (AlarmManager) context.getSystemService(Context.ALARM_SERVICE);
         alarmManager.cancel(pendingIntent);
