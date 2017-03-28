@@ -1,5 +1,4 @@
-# TercodaMisericordia
-Aplicativo da Divina Misericórdia
+# Terço da Misericórdia app
 
 Versão 3.0 
 Download na Google Play: 
